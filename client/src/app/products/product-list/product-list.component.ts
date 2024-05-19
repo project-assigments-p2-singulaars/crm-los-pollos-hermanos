@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, Signal, input } from '@angular/core';
+import { Product } from '../../shared/interfaces/product';
 
 @Component({
   selector: 'app-product-list',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './product-list.component.scss'
 })
 export class ProductListComponent {
-
+@Input() products!:Signal<Product[ ]>
 }
