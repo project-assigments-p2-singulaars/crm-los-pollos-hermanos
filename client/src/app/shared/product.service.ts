@@ -1,9 +1,17 @@
-import { Injectable } from '@angular/core';
-
+import { Injectable, inject, signal } from '@angular/core';
+import { Product } from './interfaces/product';
+import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
+products!:Product[];
+  /*   public products = signal<Product[]>([]); */
+  http=inject(HttpClient);
 
-  constructor() { }
+  getAllProduct(){
+    return this.http.get<Product[]>("http://localhost:3000/products");
+  }
+
+  constructor() {}
 }
