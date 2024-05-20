@@ -1,1 +1,17 @@
-<p>header works!</p>
+<header>
+  <h2>{{title()}}</h2>
+
+  <mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-icon>account_circle</mat-icon>
+      </mat-expansion-panel-header>
+      <nav>
+        <button (click)="logout()">Logout</button>
+        <button (click)="products()">Products</button>
+        <button (click)="welcome()">Welcome</button>
+      </nav>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+</header>
