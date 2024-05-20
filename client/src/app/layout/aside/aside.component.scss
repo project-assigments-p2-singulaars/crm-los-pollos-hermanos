@@ -52,5 +52,14 @@ nav{
 
 .meme-carousel {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 0.5rem;
+    figcaption {
+        display: flex;
+        justify-content: center;
+        font-family: Poppins, sans-serif;
+        color: #ffff;
+        font-size: 0.7rem;
+    }
 }
