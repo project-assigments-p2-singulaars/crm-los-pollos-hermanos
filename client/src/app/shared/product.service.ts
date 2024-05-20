@@ -12,6 +12,10 @@ products!:Product[];
   getAllProduct(){
     return this.http.get<Product[]>("http://localhost:3000/products");
   }
-
+getProductById(id: number):any{
+  const result = this.products.find((product:Product)=> 
+  product.id === id)
+  if (result !== undefined) return result;
+}
   constructor() {}
 }
