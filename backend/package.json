@@ -1,4 +1,7 @@
 {
+	"scripts": {
+		"start": "json-server-auth db.json"
+	},
 	"devDependencies": {
 		"json-server-auth": "^2.1.0",
 		"json-server": "0.17"

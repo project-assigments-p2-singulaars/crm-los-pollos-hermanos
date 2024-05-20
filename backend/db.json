@@ -1,6 +1,61 @@
 {
-    "products": [],
-    "customers": [],
-    "orders": [],
-    "users": []
+  "products": [
+    {
+      "id": 1,
+      "name": "Fu*k! Monday cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 12.99,
+      "imageUrl": "string",
+      "description": "You hate when Monday comes? Share that feeling with the rest of the world with this awesome T-shirt!",
+      "stock": 100
+    },
+    {
+      "id": 2,
+      "name": "Wtf face kitten",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 15.99,
+      "imageUrl": "string",
+      "description": "You don't understand Angular but act like you do? Now you don't have to pretend with this awesome T-shirt!",
+      "stock": 50
+    },
+    {
+      "id": 3,
+      "name": "Sad kitten",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 10.99,
+      "imageUrl": "string",
+      "description": "You cry yourself to sleep? Don't worry, with this T-shirt you will have a friend to keep you company! :D",
+      "stock": 10
+    },
+    {
+      "id": 4,
+      "name": "Galactic Taco Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 20.99,
+      "imageUrl": "string",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 2
+    }
+  ],
+  "customers": [],
+  "orders": [],
+  "users": [
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$EvWi5Py171Ys42NlveEMweeISVJwDbi5A5IhmuyBDaPMWA0sWfJeG",
+      "id": 1
+    }
+  ]
 }
