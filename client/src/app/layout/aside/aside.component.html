@@ -1,1 +1,20 @@
-<p>aside works!</p>
+<div class="aside-container">
+    <div class="logo-container">
+        <img src="../../../assets/logo.png" alt="MemePurrfection logo with the shape of a round cat">
+        <div>
+            <p>MEME</p>
+            <p>PURRFECTION</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a routerLinkActive="active" [routerLink]="['/overview']">Overview</a></li>
+            <li><a routerLinkActive="active" [routerLink]="['/customers']">Customers</a></li>
+            <li><a routerLinkActive="active" [routerLink]="['/orders']">Orders</a></li>
+            <li><a routerLinkActive="active" [routerLink]="['/products']">Products</a></li>
+        </ul>
+    </nav>
+    <div class="meme-carousel">
+        <img src="../../../assets/memes/monday-meme.png" alt="meme of a cat with glasses working on its laptop">
+    </div>
+</div>
