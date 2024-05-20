@@ -7,8 +7,8 @@
 }
 
 .logo-container{
-    border: 1px solid black;
-    margin: 2rem;
+    // border: 1px solid black;
+    margin: 2rem 3rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -24,16 +24,16 @@
 }
 
 nav{
-    border: 1px solid black;
-    margin: 2rem;
+    // border: 1px solid black;
+    margin: 2rem 3rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
     ul {
         list-style-type: none;
+        padding: 0;
         li {
-            padding: 1rem;
+            padding: 1.2rem 0;
             a {
                 text-decoration: none;
                 color: #ffff;
