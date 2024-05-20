@@ -9,5 +9,5 @@ import { Product } from '../../shared/interfaces/product';
   styleUrl: './product-list.component.scss'
 })
 export class ProductListComponent {
-@Input() products!:Signal<Product[ ]>
+@Input() products!:Product[]
 }

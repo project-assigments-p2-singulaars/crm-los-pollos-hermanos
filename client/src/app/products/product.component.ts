@@ -1,16 +1,24 @@
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { ProductListComponent } from "./product-list/product-list.component";
 import { ProductService } from '../shared/product.service';
+import { Observable } from "rxjs";
+import { Product } from '../shared/interfaces/product';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
     selector: 'app-product',
     standalone: true,
     templateUrl: './product.component.html',
     styleUrl: './product.component.scss',
-    imports: [ProductListComponent]
+    imports: [ProductListComponent, AsyncPipe]
 })
-export class ProductComponent {
+export class ProductComponent implements OnInit{
 
+    products!:Observable<Product[]>;
     private productService = inject(ProductService)
-    products=this.productService.products
+   
+
+    ngOnInit(): void {
+        this.products=this.productService.getAllProduct();
+    }
 }
