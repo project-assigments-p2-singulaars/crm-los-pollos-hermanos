@@ -5,56 +5,52 @@
   </div>
 
   <div id="landing-forms">
-    <div  class="login-list-container">
-      <li class="login-list"><a href="#">Login</a></li>
-      <li class="login-list"><a href="#">Register</a></li>
-    </div>
-    <h3>Hello again!</h3>
-    <h4>Welcome back!</h4>
-    <form [formGroup]="loginForm" (ngSubmit)="submit()">
-      <section>
+    <mat-tab-group>
+      <mat-tab label="Login"><h3>Hello again!</h3>
+        <h4>Welcome back!</h4>
+        <form [formGroup]="loginForm" (ngSubmit)="submit()">
+          <section>
+              <mat-form-field appearance="fill">
+                <mat-label>Email Address</mat-label>
+                <input matInput type="text" formControlName="email">
+              </mat-form-field>
+          </section>
+          <section>
+            <mat-form-field appearance="fill">
+              <mat-label>Password</mat-label>
+              <input matInput type="password" formControlName="password">
+            </mat-form-field>
+          </section>
+          <button mat-flat-button color="primary" type="submit">Login</button>
+          <li class="login-list"><a href="#">Forgot Password</a></li>
+        </form>
+      </mat-tab>
+
+      <mat-tab label="Register"><form [formGroup]="loginForm" (ngSubmit)="register()">
+        <section>
+            <mat-form-field appearance="fill">
+              <mat-label>Email Address</mat-label>
+              <input matInput type="text" formControlName="email">
+            </mat-form-field>
+        </section>
+        <section>
           <mat-form-field appearance="fill">
-            <mat-label>Email Address</mat-label>
-            <input matInput type="text" formControlName="email">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" formControlName="password">
           </mat-form-field>
-      </section>
-      <section>
-        <mat-form-field appearance="fill">
-          <mat-label>Password</mat-label>
-          <input matInput type="password" formControlName="password">
-        </mat-form-field>
-      </section>
-      <button mat-flat-button color="primary" type="submit">Login</button>
-      <li class="login-list"><a href="#">Forgot Password</a></li>
-    </form>
+        </section>
+        <section>
+          <mat-form-field appearance="fill">
+            <mat-label>Repeat your password</mat-label>
+            <input matInput type="password" formControlName="password">
+          </mat-form-field>
+        </section>
+        <button mat-flat-button color="primary" type="submit">Register</button>
+      </form></mat-tab>
+    </mat-tab-group>
     
-    <form [formGroup]="loginForm" (ngSubmit)="submit()">
-      <section>
-        <mat-form-field appearance="fill">
-          <mat-label>Name</mat-label>
-          <input matInput type="text" formControlName="name">
-        </mat-form-field>
-    </section>
-      <section>
-          <mat-form-field appearance="fill">
-            <mat-label>Email Address</mat-label>
-            <input matInput type="text" formControlName="email">
-          </mat-form-field>
-      </section>
-      <section>
-        <mat-form-field appearance="fill">
-          <mat-label>Password</mat-label>
-          <input matInput type="password" formControlName="password">
-        </mat-form-field>
-      </section>
-      <section>
-        <mat-form-field appearance="fill">
-          <mat-label>Repeat your password</mat-label>
-          <input matInput type="password" formControlName="password">
-        </mat-form-field>
-      </section>
-      <button mat-flat-button color="primary" type="submit">Login</button>
-    </form>
+    
+    
   </div>
 </div>
 

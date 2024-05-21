@@ -4,11 +4,12 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [ReactiveFormsModule,MatFormFieldModule, MatInputModule, MatIconModule,MatButtonModule],
+  imports: [ReactiveFormsModule,MatFormFieldModule, MatInputModule, MatIconModule,MatButtonModule,MatTabsModule],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
@@ -16,9 +17,9 @@ export class LandingPageComponent {
   //private loginService = inject(AuthService);
   private formBuilder = inject(FormBuilder);
   loginForm!: FormGroup;
+
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
-      name: ['',Validators.required],
       email: ['', Validators.required],
       password: ['', Validators.required],
     });
@@ -33,5 +34,8 @@ export class LandingPageComponent {
     //   //this.loginService.login(user);
     //   console.log("the user is ", user )
     // }
+  }
+  register(){
+    
   }
 }
