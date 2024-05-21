@@ -2,7 +2,7 @@
     
     @for (product of products; track $index){
   <div id="plCard">
-    <a [routerLink]="['/product',product.id]">
+    <a [routerLink]="['/products',product.id]">
     <img id="plImg" src="{{product.imageUrl}}" alt="{{product.name}}">
     <li>
        
@@ -13,5 +13,4 @@
         <img src="../../../assets/icons/edit icon.svg">
         EDIT</button>
 </div>
-       
-   }</section>
+}</section>

@@ -1,6 +1,7 @@
 import { Injectable, inject, signal } from '@angular/core';
 import { Product } from './interfaces/product';
 import { HttpClient } from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -13,9 +14,8 @@ products!:Product[];
     return this.http.get<Product[]>("http://localhost:3000/products");
   }
 getProductById(id: number):any{
-  const result = this.products.find((product:Product)=> 
-  product.id === id)
-  if (result !== undefined) return result;
+  console.log(id)
+  return this.http.get<Product>(`http://localhost:3000/products/${id}`); // string interpolation  ${ }
 }
   constructor() {}
 }
