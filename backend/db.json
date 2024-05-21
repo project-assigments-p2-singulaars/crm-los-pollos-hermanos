@@ -1,5 +1,4 @@
 {
-
   "products": [
     {
       "id": 1,
@@ -33,7 +32,7 @@
         "cat"
       ],
       "price": 10.99,
-      "imageUrl": "string",
+      "imageUrl": "https://img.mrvcdn.com/g/fb/kf/S978f61b49ac949d2857d8b41b2a684acO.jpg_2200x2200q75.avif",
       "description": "You cry yourself to sleep? Don't worry, with this T-shirt you will have a friend to keep you company! :D",
       "stock": 10
     },
@@ -48,6 +47,102 @@
       "imageUrl": "string",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
       "stock": 2
+    },
+    {
+      "id": 5,
+      "name": "Magic Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl":"https://catmagicpunks.com/cdn/shop/files/magic_shirt_mock_1024x1024.png?v=1705694211",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 29
+    },
+    {
+      "id": 6,
+      "name": "Mewing Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://ae01.alicdn.com/kf/S29b092e59b0b4b2f8192f96a17c51642D/Mewing-Not-Meowing-Funny-Meme-for-Men-Women-T-Shirts-Mogging-Cat-Merch-Creative-Tees-Short.jpg",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 29
+    },
+    {
+      "id": 7,
+      "name": "My Cat Needs me!",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://images.teemill.com/iadjmepnll2wmk8pdkyuvt3rxhlqkbimrgwzvpncq4c96swm.png.png?w=1080&h=auto",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 29
+    },
+    {
+      "id": 8,
+      "name": "Don't pet the Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://www.legboot.com/wp-content/uploads/2021/01/redirect01132021160138-4.png",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 29
+    },
+    {
+      "id": 9,
+      "name": "Michiverse",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://printacoph.com/cdn/shop/files/Cat-Meme-Black.png?v=1691634222&width=416",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 29
+    },
+    {
+      "id": 10,
+      "name": "Dissociating Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://curiouscatcompany.com/cdn/shop/files/mockup-of-a-man-wearing-a-customizable-t-shirt-against-a-plain-color-backdrop-1422-el1_1_bea1ffac-1d95-4188-9447-120d2b40960d_1024x1024.png?v=1698383385",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 29
+    },
+    {
+      "id": 11,
+      "name": "Salad Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://www.yocrackers.com/cdn/shop/products/REALHOUSEWIVESMEMET-SHIRT.png?v=1623518084",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 29
+    },
+    {
+      "id": 12,
+      "name": "Mugger Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://images.teemill.com/slbpe0irv9pg8gavcrhpvviqbszyua7leceuxbdz6bwv3n9o.png.png?w=1080&h=auto",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 29
     }
   ],
   "customers": [],
