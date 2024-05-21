@@ -9,28 +9,28 @@ export const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-    // children: [
-    //   {
-    //     path: 'overview',
-    //     component: DashboardComponent,
-    //   },
-    //   {
-    //     path: 'dashboard',
-    //     redirectTo: '',
-    //   },
-    //   {
-    //     path: 'customer',
-    //     component: CustomerComponent,
-    //   },
-    //   {
-    //     path: 'order',
-    //     component: OrderComponent,
-    //   },
-    //   {
-    //     path: 'product',
-    //     component: ProductComponent,
-    //   },
-    // ],
+    children: [
+      {
+        path: 'overview',
+        component: DashboardComponent,
+      },
+      {
+        path: 'dashboard',
+        redirectTo: '',
+      },
+      {
+        path: 'customers',
+        component: CustomerComponent,
+      },
+      {
+        path: 'orders',
+        component: OrderComponent,
+      },
+      {
+        path: 'products',
+        component: ProductComponent,
+      },
+    ],
   },
   // {
   //   path: 'login',

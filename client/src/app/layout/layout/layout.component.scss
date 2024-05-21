@@ -12,8 +12,8 @@
     width: 99vw;
     grid-template-areas: 
         "aside header"
-        "aside dashboard"
-        "aside dashboard";
+        "aside content"
+        "aside content";
 }
 
 app-header {
@@ -24,9 +24,4 @@ app-header {
 app-aside {
     grid-area: aside;
     border: 1px solid blue;
-}
-
-app-dashboard {
-    grid-area: dashboard;
-    border: 1px solid black;
 }
