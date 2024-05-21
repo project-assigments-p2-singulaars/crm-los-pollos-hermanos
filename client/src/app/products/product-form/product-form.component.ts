@@ -5,6 +5,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Product } from '../../shared/interfaces/product';
+import { ProductService } from '../../shared/product.service';
 
 @Component({
   selector: 'app-product-form',
@@ -17,12 +18,12 @@ export class ProductFormComponent implements OnInit {
   @Input() productForm!: FormGroup;
   @Output() sentForm = new EventEmitter<Product>();
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private productService:ProductService) {}
 
   ngOnInit() {
     this.productForm = this.fb.group({
       name: ['', Validators.required],
-      category: ['', Validators.required],
+      categories: ['', Validators.required],
       price: ['', Validators.required],
       stock: ['', Validators.required],
       description: ['', Validators.required],
@@ -34,14 +35,15 @@ export class ProductFormComponent implements OnInit {
     if (this.productForm.valid) {
       const product: Product = {
         name: this.productForm.controls["name"].value,
-        // category: this.productForm.controls["category"].value,
+        categories: this.productForm.controls["categories"].value,
         price: this.productForm.controls["price"].value,
         stock: this.productForm.controls["stock"].value,
         description: this.productForm.controls["description"].value,
         imageUrl: this.productForm.controls["imageUrl"].value,
-      };
-      this.sentForm.emit(product);
-    }console.log(this.sentForm)
+      };console.log(product)
+      this.productService.addProduct(product)
+      // this.sentForm.emit(product);
+    }
   }
 }
 
