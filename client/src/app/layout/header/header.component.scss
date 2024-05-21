@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+nav button {
+  width: 10rem;
+}

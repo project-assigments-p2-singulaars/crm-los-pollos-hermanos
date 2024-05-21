@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
+import { Product } from '../../shared/interfaces/product';
+import { ProductService } from '../../shared/product.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -7,6 +9,11 @@ import { Component } from '@angular/core';
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.scss'
 })
-export class ProductDetailComponent {
-
+export class ProductDetailComponent implements OnInit{
+@Input() id!:string;
+product!: Product;
+private productService = inject(ProductService)
+ngOnInit(): void {
+  this.product = this.productService.getProductById(+this.id)
+}
 }
