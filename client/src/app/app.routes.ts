@@ -5,18 +5,16 @@ import { ProductDetailComponent } from './products/product-detail/product-detail
 import { ProductListComponent } from './products/product-list/product-list.component';
 
 export const routes: Routes = [
-    {
-        path:"",
-        component: LayoutComponent,
-      },
-      {
-        path:"products", 
-        component: ProductListComponent,
-      },
-    {
-        path:"products/:id",
-        component: ProductDetailComponent,
-      },
-
-
+  {
+    path: '',
+    component: LayoutComponent,
+  },
+  {
+    path: 'products',
+    component: ProductComponent,
+  },
+  {
+    path: 'products/:id',
+    component: ProductDetailComponent,
+  },
 ];
