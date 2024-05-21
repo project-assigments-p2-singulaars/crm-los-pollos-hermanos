@@ -1,7 +1,16 @@
-<p>product-list works!</p>
-@for (product of products; track $index){
-<li><h2>{{product.name}}</h2>
-    <img src="{{product.imageUrl}}" alt="{{product.name}}">
+<section id="product-list-grid">
     
-</li>
-   }
+    @for (product of products; track $index){
+  <div id="plCard">
+    <a [routerLink]="['/products',product.id]">
+    <img id="plImg" src="{{product.imageUrl}}" alt="{{product.name}}">
+    <li>
+       
+        <h2 id="plTitle">{{product.name}}</h2>
+        <p id="pltDescription">{{product.description}}</p>
+    </li> </a>
+    <button mat-flat-button color="primary">
+        <img src="../../../assets/icons/edit icon.svg">
+        EDIT</button>
+</div>
+}</section>

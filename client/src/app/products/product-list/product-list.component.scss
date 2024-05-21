@@ -1,6 +1,50 @@
-// :host{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-// }
+a {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    text-decoration: none;
+    
+}
+
+#plCard{
+    text-decoration: none;
+    border-radius: 10%;
+    width: 20%;
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+#product-list-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#plImg{
+    width: 100%;
+    height:  15rem;
+    border-radius: 10%;
+}
+
+#plTitle{
+    color: black;
+}
+#pltDescription{
+    color: #909090;
+}
+
+.mat-flat-button{
+    width: 80%;
+    border-radius: 20%;
+    bottom: 0;
+}

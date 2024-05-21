@@ -21,6 +21,12 @@ export class ProductService {
     )
         console.log(result);
   }
+
+getProductById(id: number):any{
+  console.log(id)
+  return this.http.get<Product>(`http://localhost:3000/products/${id}`); // string interpolation  ${ }
+}
+  constructor() {}
 }
 
 // async login(credentials:User){
