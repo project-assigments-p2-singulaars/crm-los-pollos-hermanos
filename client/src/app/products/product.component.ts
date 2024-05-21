@@ -4,13 +4,14 @@ import { ProductService } from '../shared/product.service';
 import { Observable } from "rxjs";
 import { Product } from '../shared/interfaces/product';
 import { AsyncPipe } from '@angular/common';
+import { ProductFormComponent } from './product-form/product-form.component';
 
 @Component({
     selector: 'app-product',
     standalone: true,
     templateUrl: './product.component.html',
     styleUrl: './product.component.scss',
-    imports: [ProductListComponent, AsyncPipe]
+    imports: [ProductListComponent, AsyncPipe, ProductFormComponent]
 })
 export class ProductComponent implements OnInit{
 

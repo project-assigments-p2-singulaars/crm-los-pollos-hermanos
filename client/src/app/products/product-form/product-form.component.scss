@@ -1,0 +1,46 @@
+.form-container{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: pink;
+}
+
+.name-input{
+    width: 90%;
+}
+
+.row-inputs-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid red;
+}
+
+.row-input{
+    width: 25%;
+}
+
+.category-input{
+    width: 50%;
+    
+}
+
+.description-input{
+    width: 90%;
+}
+
+.url-input{
+    width: 90%;
+}
+.add-btn{
+    width: 50%;
+    height: 60px;
+    border: none;
+    background-color: #635BFF;
+    color: rgb(255, 255, 255);
+}

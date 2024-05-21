@@ -4,6 +4,7 @@ export interface Product {
     name: string;
     price?: GLfloat;
     imageUrl?: string;
+    categories?:string[]
     description?: string;
     stock?: number;
     categories?: string;
