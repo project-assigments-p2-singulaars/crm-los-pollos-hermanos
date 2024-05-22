@@ -18,7 +18,7 @@ product!: Product;
 private productService = inject(ProductService)
 ngOnInit(): void {
   console.log(this.id)
-  let id = parseInt(this.id)
+  let id = parseInt(this.id) // convertir en numbero el ID recibido
   console.log(id)
   this.productInfo = this.productService.getProductById(id);
   this.productInfo.subscribe((response:Product)=> { // subscribe obtenemos los datos del observable

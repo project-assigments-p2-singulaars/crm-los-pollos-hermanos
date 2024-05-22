@@ -4,14 +4,17 @@ import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
-users!:User[];
-http = inject(HttpClient);
+/*   users!: User[];
+  http = inject(HttpClient);
 
-async addUser(user: User){
-  const result = await firstValueFrom(
-    this.http.post<User>('http://localhost:3000/users', user))
-}
+  async addUser(user: User) {
+    //   const result = await firstValueFrom(
+    //     this.http.post<User>('http://localhost:3000/users', user))
+    // }
+
+    return this.http.post<User>('http://localhost:3000/users', user);
+  } */
 }

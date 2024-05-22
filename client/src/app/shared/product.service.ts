@@ -24,7 +24,7 @@ export class ProductService {
 
 getProductById(id: number):any{
   console.log(id)
-  return this.http.get<Product>(`http://localhost:3000/products/${id}`); // string interpolation  ${ }
+  return this.http.get<Product>(`http://localhost:3000/products/${id}`); // string interpolation  ${ } HAY QUE USAR ` `
 }
   constructor() {}
 }

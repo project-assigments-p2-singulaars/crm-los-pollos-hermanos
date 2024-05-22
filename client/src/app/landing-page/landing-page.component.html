@@ -1,19 +1,20 @@
-     <div id="landing-container">
-    <div id="landing-welcome">
-      <h1>Meme Purrfection CRM</h1>
-      <h2>The most pawsome ecommerce manager ever!</h2>
-    </div>
-  
-    <div id="landing-forms">
-      <mat-tab-group>
-        <mat-tab label="Login"><h3>Hello again!</h3>
-          <h4>Welcome back!</h4>
-          <form [formGroup]="loginForm" (ngSubmit)="submit()">
+<!-- <div id="landing-container">
+  <div id="landing-welcome">
+    <h1>Meme Purrfection CRM</h1>
+    <h2>The most pawsome ecommerce manager ever!</h2>
+  </div>
+
+  <div id="landing-forms">
+    <mat-tab-group>
+      <h3>Hello again!</h3>
+      <h4>Welcome back!</h4>
+      <mat-tab label="Login">
+        <form [formGroup]="loginForm" (ngSubmit)="submit()">
             <section>
-                <mat-form-field appearance="fill">
-                  <mat-label>Email Address</mat-label>
-                  <input matInput type="text" formControlName="email">
-                </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Email Address</mat-label>
+                <input matInput type="text" formControlName="email">
+              </mat-form-field>
             </section>
             <section>
               <mat-form-field appearance="fill">
@@ -24,38 +25,34 @@
             <button mat-flat-button color="primary" type="submit">Login</button>
             <li class="login-list"><a href="#">Forgot Password</a></li>
           </form>
-        </mat-tab>
-  
-        <mat-tab label="Register"><form [formGroup]="registerForm" (ngSubmit)="register()">
+      </mat-tab>
+      <mat-tab label="Register">
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
           <section>
-              <mat-form-field appearance="fill">
-                <mat-label>Email Address</mat-label>
-                <input matInput type="text" formControlName="email">
-              </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>Email Address</mat-label>
+              <input matInput type="text" formControlName="emailRegister">
+            </mat-form-field>
           </section>
           <section>
             <mat-form-field appearance="fill">
               <mat-label>User Name</mat-label>
               <input matInput type="text" formControlName="userName">
             </mat-form-field>
-        </section>
+          </section>
           <section>
             <mat-form-field appearance="fill">
               <mat-label>Password</mat-label>
               <input matInput type="password" formControlName="password">
             </mat-form-field>
           </section>
-    <section>
+          <section>
             <mat-form-field appearance="fill">
               <mat-label>Repeat your password</mat-label>
               <input matInput type="password" formControlName="password">
             </mat-form-field>
-          </section> 
+          </section>
           <button mat-flat-button color="primary" type="submit">Register</button>
-        </form></mat-tab>
-      </mat-tab-group>
-      
-      
-      
-    </div>
-  </div> 
+        </form>
+      </mat-tab>
+    </mat-tab-group> -->
