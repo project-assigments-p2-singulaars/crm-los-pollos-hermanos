@@ -25,6 +25,15 @@
     display: flex;
     flex-direction: row;
 }
+form{
+    overflow: hidden;
+}
 .login-list a{
     text-decoration: none;
+}
+.login-list {
+    list-style: none;
+}
+.login-button{
+    width: 100%;
 }
