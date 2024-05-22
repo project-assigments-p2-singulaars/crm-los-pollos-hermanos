@@ -1,2 +1,3 @@
-<app-product-list [products]="(products |async) || []" ></app-product-list>
+<app-search></app-search>
+<app-product-list [products]="products()" ></app-product-list>
 <app-product-form></app-product-form>

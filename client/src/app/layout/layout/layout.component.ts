@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProductComponent } from "../../products/product.component";
+import { SearchComponent } from "../../shared/components/search/search.component";
 
 @Component({
     selector: 'app-layout',

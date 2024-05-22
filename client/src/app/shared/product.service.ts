@@ -5,14 +5,14 @@ import { Observable, catchError, firstValueFrom, of } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class ProductService {
+export class ProductService { 
   products!: Product[];
   /*   public products = signal<Product[]>([]); */
   http = inject(HttpClient);
 
-  getAllProduct() {
-    return this.http.get<Product[]>('http://localhost:3000/products');
-  }
+  // getAllProduct() {
+  //   return this.http.get<Product[]>('http://localhost:3000/products');
+  // }
 
   async addProduct(product: Product){
     console.log(product);
