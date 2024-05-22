@@ -23,7 +23,7 @@ import { UserService } from '../shared/user.service';
   styleUrl: './landing-page.component.scss',
 })
 export class LandingPageComponent {
-
+/* 
 @Input() registerForm!: FormGroup;
 @Output() 
   //private loginService = inject(AuthService);
@@ -55,6 +55,7 @@ export class LandingPageComponent {
     userName: ['',Validators.minLength(5), Validators.maxLength(100), ]
   
     };
+    // falta ngvoid
   register() {
 const newUser: User = {
   userName: this.registerForm.controls["userName"].value,
@@ -63,38 +64,5 @@ const newUser: User = {
 };
 this.userService.addUser(newUser)
  this.registeredForm.emit(newUser);
-
+ */
 }
-
-/* @Input() productForm!: FormGroup;
-@Output() sentForm = new EventEmitter<Product>();
-
-constructor(private fb: FormBuilder, private productService:ProductService) {}
-
-ngOnInit() {
-  this.productForm = this.fb.group({
-    name: ['', Validators.required],
-    categories: ['', Validators.required],
-    price: ['', Validators.required],
-    stock: ['', Validators.required],
-    description: ['', Validators.required],
-    imageUrl: ['', Validators.required]
-  });
-}
-
-submit() {
-  if (this.productForm.valid) {
-    const product: Product = {
-      name: this.productForm.controls["name"].value,
-      categories: this.productForm.controls["categories"].value,
-      price: this.productForm.controls["price"].value,
-      stock: this.productForm.controls["stock"].value,
-      description: this.productForm.controls["description"].value,
-      imageUrl: this.productForm.controls["imageUrl"].value,
-    };console.log(product)
-    this.productService.addProduct(product)
-    // this.sentForm.emit(product);
-  }
-}
-} */
-

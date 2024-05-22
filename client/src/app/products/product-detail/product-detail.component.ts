@@ -2,11 +2,12 @@ import { Component, Input, OnInit, inject } from '@angular/core';
 import { Product } from '../../shared/interfaces/product';
 import { ProductService } from '../../shared/product.service';
 import { Observable } from 'rxjs';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-product-detail',
   standalone: true,
-  imports: [],
+  imports: [MatButtonModule],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.scss'
 })

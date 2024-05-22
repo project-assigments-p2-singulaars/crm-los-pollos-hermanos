@@ -9,9 +9,10 @@
         <h2 id="plTitle">{{product.name}}</h2>
         <p id="pltDescription">{{product.description}}</p>
     </li> 
-    <a [routerLink]="['/products',product.id]"><button mat-flat-button color="primary">
-        <img src="../../../assets/icons/edit icon.svg">
+    <div id="plButContainer"> 
+      <a [routerLink]="['/products',product.id]"><button mat-flat-button color="primary">
       VIEW</button></a>
-      <button mat-flat-button>ORDER MORE</button>
+      <button mat-flat-button color="primary">ORDER MORE</button></div>
+    
 </div>
 }</section>

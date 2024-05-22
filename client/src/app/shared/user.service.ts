@@ -7,12 +7,11 @@ import { firstValueFrom } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-users!:User[];
+/* users!:User[];
 http = inject(HttpClient);
 
 async addUser(user: User){
   const result = await firstValueFrom(
     this.http.post<User>('http://localhost:3000/products', user)
-}
-  constructor() { }
+} */
 }

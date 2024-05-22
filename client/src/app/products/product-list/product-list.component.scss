@@ -8,6 +8,7 @@ a {
 
 li {
     text-decoration: none;
+    list-style: none;
     
 }
 
@@ -37,7 +38,7 @@ li {
 }
 
 #plTitle{
-    color: black;
+    color: #333333
 }
 #pltDescription{
     color: #909090;
@@ -47,4 +48,10 @@ li {
     width: 80%;
     border-radius: 20%;
     bottom: 0;
+}
+
+#plButContainer{
+    display: flex;
+    justify-content: space-evenly;
+
 }

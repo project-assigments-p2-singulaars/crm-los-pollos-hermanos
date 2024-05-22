@@ -1,0 +1,66 @@
+#pdCard{
+    background-color: #EBEBEB;
+    border-radius: 10%;
+    display: flex;
+    padding: 3rem;
+    
+}
+#pdImg{
+    border-radius: 10%;
+    width: 40%;
+}
+
+#pdContent{
+    margin-left: 2rem;
+    flex-direction: column;
+    width: 55%;
+    border: solid blue 1px;
+}
+
+#pdHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid red 1px;
+}
+
+#pdTitle{
+ color: #3C3F88;
+}
+
+#pdPrice{
+
+}
+
+#pdContent{
+    flex-direction: column;
+    width: 60%;
+    border: solid blue 1px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pdtDescrip{
+    width: 60%;
+}
+
+#pdButtons{
+    bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+
+#pdButEdit{
+    border-radius: 10px;
+    width: 8rem;
+    height: 2rem;
+}
+#pdButDelete{
+    background-color: #FF5B5B;
+    border-radius: 10px;
+    width: 8rem;
+    height: 2rem;
+    
+}
