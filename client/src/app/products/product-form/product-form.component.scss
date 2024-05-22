@@ -1,46 +1,55 @@
-.form-container{
-    width: 60%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: pink;
+.form-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(113, 113, 113);
 }
 
-.name-input{
-    width: 90%;
+.modal-container {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: white;
 }
 
-.row-inputs-container{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    border: 1px solid red;
+.name-input {
+  width: 90%;
 }
 
-.row-input{
-    width: 25%;
+.row-inputs-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
-.category-input{
-    width: 50%;
-    
+.row-input {
+  width: 20%;
 }
 
-.description-input{
-    width: 90%;
+.category-input {
+  width: 60%;
 }
 
-.url-input{
-    width: 90%;
+.description-input {
+  width: 90%;
 }
-.add-btn{
-    width: 50%;
-    height: 60px;
-    border: none;
-    background-color: #635BFF;
-    color: rgb(255, 255, 255);
+
+.url-input {
+  width: 90%;
+}
+.add-btn {
+  width: 50%;
+  height: 60px;
+  border: none;
+  background-color: #635bff;
+  color: rgb(255, 255, 255);
 }

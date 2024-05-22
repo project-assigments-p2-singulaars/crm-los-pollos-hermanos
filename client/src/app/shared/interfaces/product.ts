@@ -7,5 +7,4 @@ export interface Product {
     categories?:string[]
     description?: string;
     stock?: number;
-    categories?: string;
 }
