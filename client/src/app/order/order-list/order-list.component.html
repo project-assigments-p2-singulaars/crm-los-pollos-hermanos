@@ -1,1 +1,33 @@
-<p>order-list works!</p>
+<div id="order-list-container">
+    <div class="add-button-container">
+        <button class="add-button">+ ADD NEW ORDER</button>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>product</th>
+                    <th>costumer</th>
+                    <th>date</th>
+                    <th>quantity</th>
+                    <th>total price</th>
+                    <th>status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            @for (order of orders; track $index){
+            <tbody>
+                <tr>
+                    <td>{{ order.productId }}</td>
+                    <td>{{ order.costumerId }}</td>
+                    <td>{{ order.calendarDate }}</td>
+                    <td>{{ order.quantity }}</td>
+                    <td>{{ order.totalPrice }}</td>
+                    <td>{{ order.orderStatus }}</td>
+                    <td><button>EDIT</button><button>DELETE</button></td>
+                </tr>
+            </tbody>
+            }
+        </table>
+    </div>
+</div>

@@ -1,9 +1,16 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
+import { Order } from './interfaces/order';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class OrderService {
+  orders!: Order[];
+  http = inject(HttpClient);
 
-  constructor() { }
+  getAllOrders() {
+    return this.http.get<Order[]>('http://localhost:3000/orders');
+  }
+  constructor() {}
 }
