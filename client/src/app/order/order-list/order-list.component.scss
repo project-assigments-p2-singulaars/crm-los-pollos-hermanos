@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :host{
-    font-family: Poppins, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  font-family: Poppins, sans-serif;
 }
 
 #order-list-container{
@@ -15,10 +12,8 @@
 }
 
 .add-button-container {
-    border: 1px solid black;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
     width: 90%;
 
     .add-button{
@@ -32,9 +27,10 @@
         cursor: pointer;
         border-radius: 2rem;
         display: flex;
-        justify-content: flex-end;
         align-items: center;
-        gap: 8px;
+    }
+    .add-button:hover{
+      background-color: #1B1F67;
     }
 }
 
@@ -73,3 +69,47 @@ table th, .styled-table td {
   table tbody td {
     text-align: center;
   }
+
+  .buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    gap: 1.5rem;
+  }
+
+.edit-button {
+  background-color: #635BFF;
+        color: white;
+        font-family: Poppins, sans-serif;
+        border: none;
+        padding: 10px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+}
+
+.edit-button:hover{
+  background-color: #1B1F67;
+}
+
+.delete-button{
+  background-color: #FF4545;
+        color: white;
+        font-family: Poppins, sans-serif;
+        border: none;
+        padding: 10px 20px;
+        font-weight: 800;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+}
+
+.delete-button:hover{
+  background-color: #c02e2e;
+}
