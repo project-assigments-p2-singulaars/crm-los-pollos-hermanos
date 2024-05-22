@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, inject } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, inject } from '@angular/core';
 import { FormBuilder,FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -23,17 +23,17 @@ import { UserService } from '../shared/user.service';
   styleUrl: './landing-page.component.scss',
 })
 export class LandingPageComponent {
-/* 
+
+ /*  loginForm!: FormGroup; */
 @Input() registerForm!: FormGroup;
-@Output() 
+@Output() registeredForm = new EventEmitter<User>();
   //private loginService = inject(AuthService);
+
   private formBuilder = inject(FormBuilder);
-  loginForm!: FormGroup;
-  
   private userService = inject(UserService)
 
   ngOnInit(): void {
-    this.loginForm = this.formBuilder.group({
+    /* this.loginForm = this.formBuilder.group({
       email: ['', Validators.required],
       password: ['', Validators.required],
     });
@@ -48,21 +48,26 @@ export class LandingPageComponent {
       //this.loginService.login(user);
       console.log('the user is ', user);
     }
-  }
+  } */
   this.registerForm = this.formBuilder.group({
-    email: ['', Validators.pattern(/\S+@\S+\.\S+/)],
-    password: ['', Validators.required],
+    
+    email:['',[Validators.required,Validators.email, Validators.pattern((/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/))]],
+    password:['', [Validators.required,Validators.minLength(8), Validators.pattern('^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,}$')]],
     userName: ['',Validators.minLength(5), Validators.maxLength(100), ]
   
-    };
-    // falta ngvoid
+    });
+  }
+
   register() {
-const newUser: User = {
-  userName: this.registerForm.controls["userName"].value,
-      email: this.registerForm.controls["email"].value,
-      password: this.registerForm.controls["password"].value,
-};
-this.userService.addUser(newUser)
- this.registeredForm.emit(newUser);
- */
+    if (this.registerForm.valid){
+      const newUser: User = {
+        userName: this.registerForm.controls["userName"].value,
+            email: this.registerForm.controls["email"].value,
+            password: this.registerForm.controls["password"].value,
+      };
+    }
+;
+this.userService.addUser(user)
+ this.registeredForm.emit(user);
+  }
 }
