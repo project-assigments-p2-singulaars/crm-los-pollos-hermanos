@@ -8,7 +8,7 @@
         "cat"
       ],
       "price": 12.99,
-      "imageUrl": "string",
+      "imageUrl": "https://img.fruugo.com/product/9/06/1440307069_0340_0340.jpg",
       "description": "You hate when Monday comes? Share that feeling with the rest of the world with this awesome T-shirt!",
       "stock": 100
     },
@@ -20,7 +20,7 @@
         "cat"
       ],
       "price": 15.99,
-      "imageUrl": "string",
+      "imageUrl": "https://i.etsystatic.com/44955627/r/il/530067/5884361355/il_794xN.5884361355_9a67.jpg",
       "description": "You don't understand Angular but act like you do? Now you don't have to pretend with this awesome T-shirt!",
       "stock": 50
     },

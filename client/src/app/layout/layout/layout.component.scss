@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:host {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
+    height: 100vh;
+    width: 99vw;
+    grid-template-areas: 
+        "aside header"
+        "aside content"
+        "aside content";
+}
+
+app-header {
+    grid-area: header;
+    border: 1px solid red;
+}
+
+app-aside {
+    grid-area: aside;
+    border: 1px solid blue;
+}
