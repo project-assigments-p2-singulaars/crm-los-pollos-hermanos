@@ -68,6 +68,7 @@ export class LandingPageComponent {
       console.log('form is valid');
       this.loginService.login(user).then(result => {
         localStorage.setItem('token', result.accessToken)
+        this.router.navigate(['layout'])
       })
     };
   }
