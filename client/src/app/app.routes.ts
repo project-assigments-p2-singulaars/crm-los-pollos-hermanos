@@ -9,10 +9,14 @@ import { OrderComponent } from './order/order.component';
 export const routes: Routes = [
   {
     path: '',
+    component: LandingPageComponent
+  },
+  {
+    path: 'layout',
     component: LayoutComponent,
     children: [
       {
-        path: 'overview',
+        path: '',
         component: DashboardComponent,
       },
       {
