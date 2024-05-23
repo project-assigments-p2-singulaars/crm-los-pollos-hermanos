@@ -1,1 +1,28 @@
-<p>customer-list works!</p>
+<!-- 
+    @for (customer of customers; track $index){} -->
+ 
+<table>
+    <tr> <!--rows titulos-->
+            
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Join Date</th>
+    </tr>
+
+    <tr><!--rows contenido-->
+      @for (customer of customers; track $index) {
+        <td><img src="{{customer.profilePhoto}}" alt="{{customer.customerName}}"></td>
+        <td>{{customer.customerName}}</td>
+        <td>{{customer.customerSurname}}</td>
+        <td>{{customer.age}}</td>
+        <td>{{customer.gender}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{customer.joinDate}}</td>
+      }
+      
+    </tr>
+
+  </table>
