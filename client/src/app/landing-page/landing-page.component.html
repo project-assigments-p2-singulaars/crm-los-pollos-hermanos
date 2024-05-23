@@ -3,8 +3,18 @@
     <h1>Meme Purrfection CRM</h1>
     <h2>The most pawsome ecommerce manager ever!</h2>
   </div>
+  <form [formGroup]="loginForm" (ngSubmit)="submit()">
 
-  <div id="landing-forms">
+        
+          <input type="text" formControlName="email">
+     
+  
+        <mat-label>Password</mat-label>
+        <input type="password" formControlName="password">
+    <button type="submit">Login</button>
+
+  </form>
+<!--   <div id="landing-forms">
     <mat-tab-group>
       <mat-tab label="Login"><h3>Hello again!</h3>
         <h4>Welcome back!</h4>
@@ -26,7 +36,7 @@
         </form>
       </mat-tab>
 
-      <mat-tab label="Register"><form [formGroup]="loginForm" (ngSubmit)="register()">
+      <mat-tab label="Register"><form [formGroup]="registerForm" (ngSubmit)="register()">
         <section>
             <mat-form-field appearance="fill">
               <mat-label>Email Address</mat-label>
@@ -41,6 +51,12 @@
         </section>
         <section>
           <mat-form-field appearance="fill">
+            <mat-label>User Name</mat-label>
+            <input matInput type="password" formControlName="userNeme">
+          </mat-form-field>
+        </section>
+          <section>
+          <mat-form-field appearance="fill">
             <mat-label>Repeat your password</mat-label>
             <input matInput type="password" formControlName="password">
           </mat-form-field>
@@ -53,4 +69,4 @@
     
   </div>
 </div>
-
+ -->
