@@ -30,10 +30,8 @@ export class OrderListComponent implements OnInit {
   }
 
   addNewOrder(order: Order) {
-    this.orderService.addOrder(order).then((newOrder) => {
-      this.orders.unshift(newOrder);
-      this.showForm = false;
-    });
+    this.orders.unshift(order); // Agrega la nueva orden a la lista local inmediatamente
+    this.showForm = false;
   }
   closeForm() {
     this.showForm = false;

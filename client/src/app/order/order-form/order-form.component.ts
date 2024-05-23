@@ -86,8 +86,8 @@ export class OrderFormComponent implements OnInit {
         totalPrice,
         orderStatus: 'pending',
       };
-      console.log(order);
-      this.orderService.addOrder(order);
+
+      // this.orderService.addOrder(order);
       this.sentForm.emit(order);
       this.orderForm.reset();
       this.formClosed.emit();
