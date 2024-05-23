@@ -62,6 +62,11 @@ export class OrderFormComponent implements OnInit {
   async submit() {
     if (this.orderForm.valid) {
       const productId = parseInt(this.orderForm.controls['productId'].value);
+      const quantity = this.orderForm.controls['quantity'].value;
+      const product = await this.productService
+        .getProductById(productId)
+        .toPromise();
+      const totalPrice = product.price * quantity;
 
       const orders = await firstValueFrom(this.orderService.getAllOrders());
       const newId = orders.length + 1;
@@ -78,8 +83,8 @@ export class OrderFormComponent implements OnInit {
         productId: parseInt(this.orderForm.controls['productId'].value),
         customerId: parseInt(this.orderForm.controls['customerId'].value),
         calendarDate: new Date().toISOString(),
-        quantity: this.orderForm.controls['quantity'].value,
-        totalPrice: productPrice * this.orderForm.controls['quantity'].value,
+        quantity,
+        totalPrice,
         orderStatus: 'pending',
       };
 
