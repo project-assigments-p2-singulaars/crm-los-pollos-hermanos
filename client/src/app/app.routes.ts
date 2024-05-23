@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout/layout.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProductComponent } from './products/product.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CustomerComponent } from './customer/customer.component';
@@ -44,4 +45,5 @@ export const routes: Routes = [
   //   path: '**',
   //   component: NotfoundpageComponent,
   // },
+
 ];
