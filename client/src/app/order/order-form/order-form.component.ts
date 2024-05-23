@@ -43,15 +43,16 @@ export class OrderFormComponent implements OnInit {
   submit() {
     if (this.orderForm.valid) {
       const order: Order = {
-        nameId: this.orderForm.controls['nameId'].value,
-        categories: this.orderForm.controls['categories'].value,
-        price: this.orderForm.controls['price'].value,
-        stock: this.orderForm.controls['stock'].value,
-        description: this.orderForm.controls['description'].value,
-        imageUrl: this.orderForm.controls['imageUrl'].value,
+        id: this.orderForm.controls['id'].value,
+        productId: this.orderForm.controls['productId'].value,
+        costumerId: this.orderForm.controls['customerId'].value,
+        calendarDate: this.orderForm.controls['calendarDate'].value,
+        quantity: this.orderForm.controls['quantity'].value,
+        totalPrice: this.orderForm.controls['totalPrice'].value,
+        orderStatus: this.orderForm.controls['orderStatus'].value,
       };
       console.log(order);
-      this.orderService.addOrder(order); //michely te falta el servicio
+      this.orderService.addOrder(order);
     }
   }
 }

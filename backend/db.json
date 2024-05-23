@@ -43,7 +43,7 @@
       "id": 1,
       "productId": 3,
       "quantity": 3,
-      "costumerId": 1,
+      "customerId": 1,
       "calendarDate": "21 May 2024 12:12:12 GMT",
       "totalPrice": 32.97,
       "orderStatus": "delivered"
@@ -52,7 +52,7 @@
       "id": 2,
       "productId": 1,
       "quantity": 1,
-      "costumerId": 3,
+      "customerId": 3,
       "calendarDate": "21 May 2024 16:01:34 GMT",
       "totalPrice": 12.99,
       "orderStatus": "delivered"
@@ -61,7 +61,7 @@
       "id": 3,
       "productId": 2,
       "quantity": 10,
-      "costumerId": 4,
+      "customerId": 4,
       "calendarDate": "22 May 2024 10:34:28 GMT",
       "totalPrice": 159.9,
       "orderStatus": "pending"
@@ -70,7 +70,7 @@
       "id": 4,
       "productId": 12,
       "quantity": 2,
-      "costumerId": 2,
+      "customerId": 2,
       "calendarDate": "22 May 2024 16:21:11 GMT",
       "totalPrice": 51.98,
       "orderStatus": "pending"
@@ -79,7 +79,7 @@
       "id": 5,
       "productId": 4,
       "quantity": 5,
-      "costumerId": 1,
+      "customerId": 1,
       "calendarDate": "22 May 2024 21:51:08 GMT",
       "totalPrice": 125.94,
       "orderStatus": "pending"
@@ -88,7 +88,7 @@
       "id": 6,
       "productId": 11,
       "quantity": 1,
-      "costumerId": 3,
+      "customerId": 3,
       "calendarDate": "22 May 2024 21:55:40 GMT",
       "totalPrice": 25.99,
       "orderStatus": "pending"
