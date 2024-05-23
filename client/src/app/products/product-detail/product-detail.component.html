@@ -1,7 +1,50 @@
-<p>product-detail works!</p>
-<h2>Name: {{product.name}}</h2>
-<img src="{{product.imageUrl}}" alt="{{product.name}}">
-<p>Description: {{product.description}}</p>
-<p>Price: {{product.price}}</p>
-<p>Category: {{product.categories}}</p>
-<p>Stock: {{product.stock}}</p>
+<!-- <section class="detail-product-container">
+  <section class="detail-card-container">
+    <img
+      class="detail-img"
+      src="{{ product.imageUrl }}"
+      alt="{{ product.name }}"
+    />
+    <div class="info-container">
+      <div id="pdHeader">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.price }} €</p>
+      </div>
+      <p>Units: {{ product.stock }}</p>
+      <p id="pdtDescrip">{{ product.description }}</p>
+      <p>Tags:</p>
+      <p>{{ product.categories }}</p>
+      <div id="pdButtons">
+        <button mat-flat-button color="primary" id="pdButEdit">
+          <img src="../../../assets/icons/edit icon.svg" /> EDIT
+        </button>
+        <button mat-flat-button color="primary" id="pdButDelete">
+          <img src="../../../assets/icons/trash icon.svg" />DELETE
+        </button>
+      </div>
+    </div>
+  </section>
+</section> -->
+
+<section id="pdCard">
+  <img id="pdImg" src="{{ product.imageUrl }}" alt="{{ product.name }}" />
+  <div id="pdContent">
+    <div id="pdHeader">
+      <h2 id="pdTitle">{{ product.name }}</h2>
+      <p id="pdPrice">{{ product.price }} €</p>
+    </div>
+
+    <p>Units: {{ product.stock }}</p>
+    <p id="pdtDescrip">{{ product.description }}</p>
+    <p>Tags:</p>
+    <p>{{ product.categories }}</p>
+    <div id="pdButtons">
+      <button mat-flat-button color="primary" id="pdButEdit">
+        <img src="../../../assets/icons/edit icon.svg" /> EDIT
+      </button>
+      <button mat-flat-button color="primary" id="pdButDelete">
+        <img src="../../../assets/icons/trash icon.svg" />DELETE
+      </button>
+    </div>
+  </div>
+</section>

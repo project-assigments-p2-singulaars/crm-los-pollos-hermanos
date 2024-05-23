@@ -1,0 +1,96 @@
+// .detail-product-container{
+//     width: 100vw;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 16px;
+//     background-color: #ebebeb;
+//     border: 1px solid rgb(60, 0, 255);
+// }
+
+// .detail-card-container{
+//     width: 80%;
+//     height: 80%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .detail-img{
+//     width: 30%;
+//     height: 90%;
+// }
+
+// .info-container{
+//     width: 60%;
+//     height: 90%;
+//     border: 1px solid rgb(60, 0, 255);
+// }
+
+
+#pdCard{
+    font-family: 'Poppins';
+    background-color: #EBEBEB;
+    border-radius: 10%;
+    display: flex;
+    padding: 3rem;
+    
+}
+#pdImg{
+    border-radius: 10%;
+    width: 40%;
+}
+
+#pdContent{
+    margin-left: 2rem;
+    flex-direction: column;
+    width: 55%;
+
+}
+
+#pdHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#pdTitle{
+ color: #3C3F88;
+}
+
+#pdPrice{
+
+}
+
+#pdContent{
+    flex-direction: column;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pdtDescrip{
+    width: 60%;
+}
+
+#pdButtons{
+    bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+
+#pdButEdit{
+    border-radius: 10px;
+    width: 8rem;
+    height: 2rem;
+}
+#pdButDelete{
+    background-color: #FF5B5B;
+    border-radius: 10px;
+    width: 8rem;
+    height: 2rem;
+    
+}
