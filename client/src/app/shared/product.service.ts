@@ -1,7 +1,7 @@
 import { Injectable, inject, signal } from '@angular/core';
 import { Product } from './interfaces/product';
 import { HttpClient } from '@angular/common/http';
-import { Observable, catchError, firstValueFrom, of } from 'rxjs';
+import { firstValueFrom } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })

@@ -17,6 +17,7 @@ import { ProductService } from '../../shared/product.service';
 export class ProductFormComponent implements OnInit {
   @Input() productForm!: FormGroup;
   @Output() sentForm = new EventEmitter<Product>();
+  @Output() sentFormulario = new EventEmitter()
 
   constructor(private fb: FormBuilder, private productService:ProductService) {}
 
@@ -42,7 +43,7 @@ export class ProductFormComponent implements OnInit {
         imageUrl: this.productForm.controls["imageUrl"].value,
       };console.log(product)
       this.productService.addProduct(product)
-      // this.sentForm.emit(product);
+       this.sentFormulario.emit("esto se envia aal padre");
     }
   }
 }
