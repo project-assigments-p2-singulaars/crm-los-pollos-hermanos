@@ -9,20 +9,26 @@ import { LocalStorageService } from '../shared/local-storage.service';
 })
 export class AuthService {
   private http = inject(HttpClient); // manejar las peticiones de la API (con el get())
-  private localStorageService = inject(LocalStorageService);
 
-
-
-  
- async login(user: User){ // el async require del await posteriormente
-  try{
-    const result = await firstValueFrom (this.http.post<User>("http://localhost:3000/login", user).pipe(catchError // FirstValueFrom(rxjs) convierte el observable en promesa al suscribirse en el observable - hay una promesa con el asyinc/await
-      (e=>of(e))))
+  async login(user: User) { // el async require del await posteriormente
+    try {
+      const result = await firstValueFrom(this.http.post<User>("http://localhost:3000/login", user).pipe(catchError // FirstValueFrom(rxjs) convierte el observable en promesa al suscribirse en el observable - hay una promesa con el asyinc/await
+        (e => of(e))))
       console.log(result)
       return result;
-  } catch(e){
-    throw e
+    } catch (e) {
+      throw e
+    }
   }
-}
 
+  async register(userData: User){
+    try {
+      const result = await firstValueFrom(this.http.post<User>("http://localhost:3000/register", userData).pipe(catchError // FirstValueFrom(rxjs) convierte el observable en promesa al suscribirse en el observable - hay una promesa con el asyinc/await
+        (e => of(e))))
+      console.log(result)
+      return result;
+    } catch (e) {
+      throw e
+    }
+  }
 }

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output, inject } from '@angular/core';
-import {FormBuilder,FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -25,41 +25,19 @@ import { LocalStorageService } from '../shared/local-storage.service';
   styleUrl: './landing-page.component.scss',
 })
 export class LandingPageComponent {
-register() {
-throw new Error('Method not implemented.');
-}
   private loginService = inject(AuthService);
   private formBuilder = inject(FormBuilder);
-  private localStorageService = inject(LocalStorageService);// servicio que manejara el token
-  private router =inject(Router) // para navegar entre rutas
+  private router = inject(Router) // para navegar entre rutas
   loginForm!: FormGroup;
-
-  /* registerForm!: FormGroup;
-  @Output() registeredForm = new EventEmitter<User>(); */
+  registerForm!: FormGroup;
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
       email: ['', Validators.required],
       password: ['', Validators.required],
     });
-  }
-  submit() {
-    const user: User = {
-      email: this.loginForm.controls['email'].value,
-      password: this.loginForm.controls['password'].value,
-    };
 
-/*         if(this.loginForm.valid){
-      this.loginService.login(user).subscribe(r=>{
-       localStorage.setItem('token', r.accessToken)
-       this.router.navigate(['/home'])}); */
-    if (this.loginForm.valid) {
-      console.log('form is valid');
-  this.loginService.login(user).then(result=>{
-        localStorage.setItem('token', result.accessToken)})
-      // localStorage.setItem('token', result.accessToken)
-    }; 
-/*     this.registerForm = this.formBuilder.group({
+    this.registerForm = this.formBuilder.group({
       emailRegister: [
         '',
         [
@@ -73,37 +51,35 @@ throw new Error('Method not implemented.');
         [
           Validators.required,
           Validators.minLength(8),
-          Validators.pattern(
-            '^(?=.*d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,}$'
-          ),
+          // Validators.pattern(
+          //   '^(?=.*d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,}$'
+          // ),
         ],
-      ],
-      userName: ['', Validators.minLength(5), Validators.maxLength(100)],
-    }); */
+      ]
+    })
   }
-  };
-
-/* 
-submit() {
-  const user: User = {
-    email: this.loginForm.controls['email'].value,
-    password: this.loginForm.controls['password'].value,
-  };
-  if (this.loginForm.valid) {
-    console.log('form is valid');
-    // this.loginService.login(user);
-    console.log('the user is ', user);
-  } */
-/* }
-
-register() {
-  if (this.registerForm.valid) {
+  submit() {
     const user: User = {
-      userName: this.registerForm.controls['userName'].value,
-      email: this.registerForm.controls['email'].value,
-      password: this.registerForm.controls['password'].value,
+      email: this.loginForm.controls['email'].value,
+      password: this.loginForm.controls['password'].value,
     };
-/*     this.userService.addUser(user); */
-/*   }
-} */
+
+    if (this.loginForm.valid) {
+      console.log('form is valid');
+      this.loginService.login(user).then(result => {
+        localStorage.setItem('token', result.accessToken)
+      })
+    };
+  }
+
+  register() {
+    if (this.registerForm.valid) {
+      const user: User = {
+        email: this.registerForm.controls['emailRegister'].value,
+        password: this.registerForm.controls['passwordRegister'].value,
+      };
+      this.loginService.register(user);
+    }
+  }
+};
 
