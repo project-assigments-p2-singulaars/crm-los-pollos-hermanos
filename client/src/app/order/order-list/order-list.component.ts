@@ -4,11 +4,12 @@ import { Order } from '../../shared/interfaces/order';
 import { MatTableModule } from '@angular/material/table';
 import { OrderService } from '../../shared/order.service';
 import { CommonModule } from '@angular/common';
+import { OrderFormComponent } from '../order-form/order-form.component';
 
 @Component({
   selector: 'app-order-list',
   standalone: true,
-  imports: [RouterLink, MatTableModule, CommonModule],
+  imports: [RouterLink, MatTableModule, CommonModule, OrderFormComponent],
   templateUrl: './order-list.component.html',
   styleUrl: './order-list.component.scss',
 })

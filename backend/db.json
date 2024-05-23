@@ -120,27 +120,63 @@
       "id": 7,
       "productId": 1,
       "customerId": 1,
-      "calendarDate": "2024-05-23T14:50:48.629Z",
-      "quantity": 3,
-      "totalPrice": 0,
+      "calendarDate": "2024-05-23T18:30:58.083Z",
+      "quantity": 4,
+      "totalPrice": 51.96,
       "orderStatus": "pending"
     },
     {
       "id": 8,
       "productId": 1,
       "customerId": 1,
-      "calendarDate": "2024-05-23T14:56:29.595Z",
-      "quantity": 1,
-      "totalPrice": 0,
+      "calendarDate": "2024-05-23T18:35:02.214Z",
+      "quantity": 5,
+      "totalPrice": 64.95,
       "orderStatus": "pending"
     },
     {
       "id": 9,
       "productId": 1,
       "customerId": 1,
-      "calendarDate": "2024-05-23T15:02:18.362Z",
-      "quantity": 2,
-      "totalPrice": 25.98,
+      "calendarDate": "2024-05-23T18:35:36.454Z",
+      "quantity": 5,
+      "totalPrice": 64.95,
+      "orderStatus": "pending"
+    },
+    {
+      "id": 10,
+      "productId": 1,
+      "customerId": 1,
+      "calendarDate": "2024-05-23T19:16:56.038Z",
+      "quantity": 3,
+      "totalPrice": 38.97,
+      "orderStatus": "pending"
+    },
+    {
+      "id": 11,
+      "productId": 1,
+      "customerId": 1,
+      "calendarDate": "2024-05-23T19:19:14.146Z",
+      "quantity": 4,
+      "totalPrice": 51.96,
+      "orderStatus": "pending"
+    },
+    {
+      "id": 12,
+      "productId": 1,
+      "customerId": 1,
+      "calendarDate": "2024-05-23T19:21:07.140Z",
+      "quantity": 4,
+      "totalPrice": 51.96,
+      "orderStatus": "pending"
+    },
+    {
+      "id": 13,
+      "productId": 2,
+      "customerId": 1,
+      "calendarDate": "2024-05-23T19:29:45.863Z",
+      "quantity": 4,
+      "totalPrice": 63.96,
       "orderStatus": "pending"
     }
   ],

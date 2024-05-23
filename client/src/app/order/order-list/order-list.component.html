@@ -2,9 +2,9 @@
     <div class="add-button-container">
         <button class="add-button" (click)="showForm = true">+ ADD NEW ORDER</button>
     </div>
-    <div *ngIf="showForm" class="modal-overlay">
-        <div class="modal">
-            <!-- <app-order-form (sentForm)="addNewOrder($event)" (formClosed)="closeForm()"></app-order-form> -->
+    <div *ngIf="showForm" class="modal-overlay" (click)="closeForm()">
+        <div class="modal" (click)="$event.stopPropagation()">
+            <app-order-form (sentForm)="addNewOrder($event)" (formClosed)="closeForm()"></app-order-form>
         </div>
     </div>
     <div class="table-container">

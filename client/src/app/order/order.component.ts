@@ -9,7 +9,7 @@ import { OrderFormComponent } from './order-form/order-form.component';
 @Component({
   selector: 'app-order',
   standalone: true,
-  imports: [OrderListComponent, OrderFormComponent, AsyncPipe],
+  imports: [OrderListComponent, AsyncPipe],
   templateUrl: './order.component.html',
   styleUrl: './order.component.scss',
 })

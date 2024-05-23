@@ -33,11 +33,10 @@ import { CustomerService } from '../../shared/customer.service';
   styleUrl: './order-form.component.scss',
 })
 export class OrderFormComponent implements OnInit {
-  @Input() orderForm!: FormGroup;
+  // @Input() orderForm!: FormGroup;
   @Output() sentForm = new EventEmitter<Order>();
   @Output() formClosed = new EventEmitter<void>();
-
-  // orderForm!: FormGroup;
+  orderForm!: FormGroup;
   products!: Observable<Product[]>;
   customers!: Observable<Customer[]>;
 
@@ -87,7 +86,6 @@ export class OrderFormComponent implements OnInit {
         totalPrice,
         orderStatus: 'pending',
       };
-
       console.log(order);
       this.orderService.addOrder(order);
       this.sentForm.emit(order);
