@@ -1,8 +1,8 @@
 export interface Order {
   id: number;
   productId: number;
-  costumerId: number;
-  calendarDate: Date;
+  customerId: number;
+  calendarDate: string;
   quantity: number;
   totalPrice: number;
   orderStatus: string;

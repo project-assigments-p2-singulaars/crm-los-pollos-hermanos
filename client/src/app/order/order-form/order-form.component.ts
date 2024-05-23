@@ -8,8 +8,15 @@ import {
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
 import { Order } from '../../shared/interfaces/order';
 import { OrderService } from '../../shared/order.service';
+import { AsyncPipe, DatePipe } from '@angular/common';
+import { ProductService } from '../../shared/product.service';
+import { Observable, firstValueFrom, map } from 'rxjs';
+import { Product } from '../../shared/interfaces/product';
+import { Customer } from '../../shared/interfaces/customer';
+import { CustomerService } from '../../shared/customer.service';
 
 @Component({
   selector: 'app-order-form',
@@ -19,6 +26,8 @@ import { OrderService } from '../../shared/order.service';
     MatFormFieldModule,
     MatSelectModule,
     MatButtonModule,
+    MatInputModule,
+    AsyncPipe,
   ],
   templateUrl: './order-form.component.html',
   styleUrl: './order-form.component.scss',
@@ -26,33 +35,62 @@ import { OrderService } from '../../shared/order.service';
 export class OrderFormComponent implements OnInit {
   @Input() orderForm!: FormGroup;
   @Output() sentForm = new EventEmitter<Order>();
+  @Output() formClosed = new EventEmitter<void>();
 
-  constructor(private fb: FormBuilder, private orderService: OrderService) {}
+  // orderForm!: FormGroup;
+  products!: Observable<Product[]>;
+  customers!: Observable<Customer[]>;
+
+  constructor(
+    private fb: FormBuilder,
+    private orderService: OrderService,
+    private productService: ProductService,
+    private customerService: CustomerService
+  ) {}
 
   ngOnInit() {
     this.orderForm = this.fb.group({
-      name: ['', Validators.required],
-      categories: ['', Validators.required],
-      price: ['', Validators.required],
-      stock: ['', Validators.required],
-      description: ['', Validators.required],
-      imageUrl: ['', Validators.required],
+      productId: ['', Validators.required],
+      customerId: ['', Validators.required],
+      quantity: ['', Validators.required],
     });
+
+    this.products = this.productService.getAllProduct();
+    this.customers = this.customerService.getAllCustomer();
   }
 
-  submit() {
+  async submit() {
     if (this.orderForm.valid) {
+      const productId = parseInt(this.orderForm.controls['productId'].value);
+
+      const orders = await firstValueFrom(this.orderService.getAllOrders());
+      const newId = orders.length + 1;
+
+      let productPrice = 0;
+      await this.productService
+        .getProductById(productId)
+        .subscribe((result: any) => {
+          productPrice = result.price;
+        });
+
       const order: Order = {
-        id: this.orderForm.controls['id'].value,
-        productId: this.orderForm.controls['productId'].value,
-        costumerId: this.orderForm.controls['customerId'].value,
-        calendarDate: this.orderForm.controls['calendarDate'].value,
+        id: newId,
+        productId: parseInt(this.orderForm.controls['productId'].value),
+        customerId: parseInt(this.orderForm.controls['customerId'].value),
+        calendarDate: new Date().toISOString(),
         quantity: this.orderForm.controls['quantity'].value,
-        totalPrice: this.orderForm.controls['totalPrice'].value,
-        orderStatus: this.orderForm.controls['orderStatus'].value,
+        totalPrice: productPrice * this.orderForm.controls['quantity'].value,
+        orderStatus: 'pending',
       };
+
       console.log(order);
       this.orderService.addOrder(order);
+      this.sentForm.emit(order);
+      this.orderForm.reset();
+      this.formClosed.emit();
     }
+  }
+  closeForm() {
+    this.formClosed.emit();
   }
 }

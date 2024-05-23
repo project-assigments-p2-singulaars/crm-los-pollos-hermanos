@@ -1,0 +1,55 @@
+.form-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(113, 113, 113);
+}
+
+.modal-container {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.name-input {
+  width: 90%;
+}
+
+.row-inputs-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.row-input {
+  width: 20%;
+}
+
+.category-input {
+  width: 60%;
+}
+
+.description-input {
+  width: 90%;
+}
+
+.url-input {
+  width: 90%;
+}
+.add-btn {
+  width: 50%;
+  height: 60px;
+  border: none;
+  background-color: #635bff;
+  color: rgb(255, 255, 255);
+}

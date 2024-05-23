@@ -1,13 +1,18 @@
 <div id="order-list-container">
     <div class="add-button-container">
-        <button class="add-button">+ ADD NEW ORDER</button>
+        <button class="add-button" (click)="showForm = true">+ ADD NEW ORDER</button>
+    </div>
+    <div *ngIf="showForm" class="modal-overlay">
+        <div class="modal">
+            <!-- <app-order-form (sentForm)="addNewOrder($event)" (formClosed)="closeForm()"></app-order-form> -->
+        </div>
     </div>
     <div class="table-container">
         <table>
             <thead>
                 <tr>
                     <th>product</th>
-                    <th>costumer</th>
+                    <th>customer</th>
                     <th>date</th>
                     <th>quantity</th>
                     <th>total price</th>
@@ -19,7 +24,7 @@
             <tbody>
                 <tr>
                     <td>{{ order.productId }}</td>
-                    <td>{{ order.costumerId }}</td>
+                    <td>{{ order.customerId }}</td>
                     <td>{{ order.calendarDate }}</td>
                     <td>{{ order.quantity }}</td>
                     <td>{{ order.totalPrice }}</td>

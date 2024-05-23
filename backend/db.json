@@ -37,7 +37,18 @@
       "stock": 2
     }
   ],
-  "customers": [],
+  "customers": [
+    {
+      "id": 1,
+      "customerName": "Michely",
+      "customerSurname": "Swift",
+      "age": 47,
+      "gender": "male",
+      "email": "1234@gmail.com",
+      "joinDate": "21 May 2024 12:12:12 GMT",
+      "profilePhoto": "https://img.kwcdn.com/thumbnail/s/fe99502b0d42a10fed71b45c8d723308_8e6ca617da3a.jpg?imageView2/2/w/650/q/50"
+    }
+  ],
   "orders": [
     {
       "id": 1,
