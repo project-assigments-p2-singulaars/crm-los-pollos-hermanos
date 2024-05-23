@@ -5,6 +5,8 @@ export interface Product {
     price?: GLfloat;
     imageUrl?: string;
     description?: string;
-    stock?: number;
+    stock: number;
     categories?: string;
+    maxStock: number,
+    stockShippingStatus?: string
 }

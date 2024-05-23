@@ -17,5 +17,9 @@ getProductById(id: number):any{
   product.id === id)
   if (result !== undefined) return result;
 }
+
+getStockPercentage(currentStock: number, maxStock:number){
+  return ((currentStock * 100) / maxStock).toFixed(2);
+}
   constructor() {}
 }

@@ -1,0 +1,41 @@
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    table{
+        width: 90%;
+      border-collapse: collapse;
+    }
+}
+
+table th, .styled-table td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  
+  table thead tr {
+    color: #949494;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    height: 2rem;
+  }
+
+  table thead tr th {
+    border-bottom: 1px solid #59588D;
+  }
+  
+  table tbody tr {
+    border-bottom: 1px solid #59588D;
+    height: 5rem;
+  }
+
+  td img {
+    height: 6rem;
+    width: 4rem;
+    object-fit: scale-down;
+  }
+
+  td {
+  }

@@ -10,7 +10,9 @@
       "price": 12.99,
       "imageUrl": "https://img.fruugo.com/product/9/06/1440307069_0340_0340.jpg",
       "description": "You hate when Monday comes? Share that feeling with the rest of the world with this awesome T-shirt!",
-      "stock": 100
+      "stock": 100,
+      "maxStock": 200,
+      "stockShippingStatus": "ok"
     },
     {
       "id": 2,
@@ -22,7 +24,9 @@
       "price": 15.99,
       "imageUrl": "https://i.etsystatic.com/44955627/r/il/530067/5884361355/il_794xN.5884361355_9a67.jpg",
       "description": "You don't understand Angular but act like you do? Now you don't have to pretend with this awesome T-shirt!",
-      "stock": 50
+      "stock": 50,
+      "maxStock": 150,
+      "stockShippingStatus": "pending"
     },
     {
       "id": 3,
@@ -34,7 +38,9 @@
       "price": 10.99,
       "imageUrl": "https://img.mrvcdn.com/g/fb/kf/S978f61b49ac949d2857d8b41b2a684acO.jpg_2200x2200q75.avif",
       "description": "You cry yourself to sleep? Don't worry, with this T-shirt you will have a friend to keep you company! :D",
-      "stock": 10
+      "stock": 10,
+      "maxStock": 200,
+      "stockShippingStatus": "ordered"
     },
     {
       "id": 4,
@@ -46,7 +52,9 @@
       "price": 20.99,
       "imageUrl": "../assets/images/catMagicShirt.png",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
-      "stock": 2
+      "stock": 2,
+      "maxStock": 100,
+      "stockShippingStatus": "ordered"
     },
     {
       "id": 5,
@@ -58,7 +66,9 @@
       "price": 25.99,
       "imageUrl": "https://catmagicpunks.com/cdn/shop/files/magic_shirt_mock_1024x1024.png?v=1705694211",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
-      "stock": 29
+      "stock": 29,
+      "maxStock": 120,
+      "stockShippingStatus": "pending"
     },
     {
       "id": 6,
@@ -70,7 +80,9 @@
       "price": 25.99,
       "imageUrl": "https://ae01.alicdn.com/kf/S29b092e59b0b4b2f8192f96a17c51642D/Mewing-Not-Meowing-Funny-Meme-for-Men-Women-T-Shirts-Mogging-Cat-Merch-Creative-Tees-Short.jpg",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
-      "stock": 29
+      "stock": 30,
+      "maxStock": 40,
+      "stockShippingStatus": "ok"
     },
     {
       "id": 7,
@@ -82,7 +94,9 @@
       "price": 25.99,
       "imageUrl": "https://images.teemill.com/iadjmepnll2wmk8pdkyuvt3rxhlqkbimrgwzvpncq4c96swm.png.png?w=1080&h=auto",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
-      "stock": 29
+      "stock": 150,
+      "maxStock": 200,
+      "stockShippingStatus": "ok"
     },
     {
       "id": 8,
@@ -94,7 +108,9 @@
       "price": 25.99,
       "imageUrl": "https://www.legboot.com/wp-content/uploads/2021/01/redirect01132021160138-4.png",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
-      "stock": 29
+      "stock": 1,
+      "maxStock": 180,
+      "stockShippingStatus": "ordered"
     },
     {
       "id": 9,
@@ -106,7 +122,9 @@
       "price": 25.99,
       "imageUrl": "https://printacoph.com/cdn/shop/files/Cat-Meme-Black.png?v=1691634222&width=416",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
-      "stock": 29
+      "stock": 50,
+      "maxStock": 125,
+      "stockShippingStatus": "pending"
     },
     {
       "id": 10,
@@ -118,7 +136,9 @@
       "price": 25.99,
       "imageUrl": "https://curiouscatcompany.com/cdn/shop/files/mockup-of-a-man-wearing-a-customizable-t-shirt-against-a-plain-color-backdrop-1422-el1_1_bea1ffac-1d95-4188-9447-120d2b40960d_1024x1024.png?v=1698383385",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
-      "stock": 29
+      "stock": 14,
+      "maxStock": 120,
+      "stockShippingStatus": "ordered"
     },
     {
       "id": 11,
@@ -130,7 +150,9 @@
       "price": 25.99,
       "imageUrl": "https://www.yocrackers.com/cdn/shop/products/REALHOUSEWIVESMEMET-SHIRT.png?v=1623518084",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
-      "stock": 29
+      "stock": 65,
+      "maxStock": 100,
+      "stockShippingStatus": "ok"
     },
     {
       "id": 12,
@@ -142,7 +164,9 @@
       "price": 25.99,
       "imageUrl": "https://images.teemill.com/slbpe0irv9pg8gavcrhpvviqbszyua7leceuxbdz6bwv3n9o.png.png?w=1080&h=auto",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
-      "stock": 29
+      "stock": 19,
+      "maxStock": 60,
+      "stockShippingStatus": "pending"
     }
   ],
   "customers": [
