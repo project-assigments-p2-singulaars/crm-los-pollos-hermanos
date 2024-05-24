@@ -6,7 +6,6 @@ export interface Product {
     categories?:string[]
     description?: string;
     stock: number;
-    categories?: string;
     maxStock: number,
     stockShippingStatus?: string
 }

@@ -41,6 +41,8 @@ export class ProductFormComponent implements OnInit {
         stock: this.productForm.controls["stock"].value,
         description: this.productForm.controls["description"].value,
         imageUrl: this.productForm.controls["imageUrl"].value,
+        maxStock: 100,
+        stockShippingStatus: "ok"
       };console.log(product)
       this.productService.addProduct(product)
        this.sentFormulario.emit("esto se envia aal padre");
