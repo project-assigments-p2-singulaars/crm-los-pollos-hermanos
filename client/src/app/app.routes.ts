@@ -20,7 +20,7 @@ export const routes: Routes = [
         component: DashboardComponent,
       },
       {
-        path: 'dashboard',
+        path: 'overview',
         redirectTo: '',
       },
       {
