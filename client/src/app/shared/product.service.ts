@@ -30,6 +30,11 @@ deleteProd(id: number){
   return this.http.delete<Product>(`http://localhost:3000/products/${id}`);
 
 }
+
+getStockPercentage(currentStock: number, maxStock:number){
+  return ((currentStock * 100) / maxStock).toFixed(2);
+}
+  constructor() {}
 }
 
 // async login(credentials:User){

@@ -5,5 +5,8 @@ export interface Product {
     imageUrl?: string;
     categories?:string[]
     description?: string;
-    stock?: number;
+    stock: number;
+    categories?: string;
+    maxStock: number,
+    stockShippingStatus?: string
 }

@@ -1,0 +1,9 @@
+<tbody>
+    <tr>
+        <td>{{ product.name }}</td>
+        <td>{{ product.imageUrl }}</td>
+        <td>{{ product.stock }}</td>
+        <td>{{ product.stockShippingStatus }}</td>
+        <td>{{ calculateStockCapacity(product.stock, product.maxStock) }}</td>
+    </tr>
+</tbody>

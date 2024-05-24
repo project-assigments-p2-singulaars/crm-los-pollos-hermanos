@@ -1,0 +1,39 @@
+#landing-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+#landing-welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    background-color: purple;
+    color: white;
+}
+#landing-forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    background-color: white;
+    color: rgb(37, 37, 37);  
+}
+.login-list-container{
+    display: flex;
+    flex-direction: row;
+}
+form{
+    overflow: hidden;
+}
+.login-list a{
+    text-decoration: none;
+}
+.login-list {
+    list-style: none;
+}
+.login-button{
+    width: 100%;
+}
