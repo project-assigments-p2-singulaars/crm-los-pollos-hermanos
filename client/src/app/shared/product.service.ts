@@ -1,21 +1,34 @@
 import { Injectable, inject, signal } from '@angular/core';
 import { Product } from './interfaces/product';
 import { HttpClient } from '@angular/common/http';
+import { firstValueFrom } from 'rxjs';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class ProductService {
-products!:Product[];
+export class ProductService { 
+  products!: Product[];
   /*   public products = signal<Product[]>([]); */
-  http=inject(HttpClient);
+  http = inject(HttpClient);
 
-  getAllProduct(){
-    return this.http.get<Product[]>("http://localhost:3000/products");
+  // getAllProduct() {
+  //   return this.http.get<Product[]>('http://localhost:3000/products');
+  // }
+
+  async addProduct(product: Product){
+    console.log(product);
+    const result = await firstValueFrom(
+      this.http.post<Product>('http://localhost:3000/products', product)
+    )
+        console.log(result);
   }
+
 getProductById(id: number):any{
-  const result = this.products.find((product:Product)=> 
-  product.id === id)
-  if (result !== undefined) return result;
+  console.log(id)
+  return this.http.get<Product>(`http://localhost:3000/products/${id}`); // string interpolation  ${ }
+}
+deleteProd(id: number){
+  return this.http.delete<Product>(`http://localhost:3000/products/${id}`);
+
 }
 
 getStockPercentage(currentStock: number, maxStock:number){
@@ -23,3 +36,23 @@ getStockPercentage(currentStock: number, maxStock:number){
 }
   constructor() {}
 }
+
+// async login(credentials:User){
+//     try{
+//       const result = await firstValueFrom(this.http.post<LoginResponseType>(this.url.concat('/login'), credentials))
+
+//       const {user} = result;
+//       this.localStorageService.setItem('user',JSON.stringify(user))
+
+//     }catch(e){
+//       throw e;
+//     }
+//   }
+// }
+
+// addHero(hero: Hero): Observable<Hero> {
+//   return this.http.post<Hero>(this.heroesUrl, hero, httpOptions)
+//     .pipe(
+//       catchError(this.handleError('addHero', hero))
+//     );
+// }

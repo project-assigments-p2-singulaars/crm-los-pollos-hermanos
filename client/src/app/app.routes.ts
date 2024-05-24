@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout/layout.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { ProductComponent } from './products/product.component';
+import { ProductDetailComponent } from './products/product-detail/product-detail.component';
+import { ProductListComponent } from './products/product-list/product-list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CustomerComponent } from './customer/customer.component';
 import { OrderComponent } from './order/order.component';
@@ -20,7 +22,7 @@ export const routes: Routes = [
         component: DashboardComponent,
       },
       {
-        path: 'dashboard',
+        path: 'overview',
         redirectTo: '',
       },
       {
@@ -35,19 +37,10 @@ export const routes: Routes = [
         path: 'products',
         component: ProductComponent,
       },
+      {
+        path:"products/:id",
+        component: ProductDetailComponent,
+      },
     ],
   },
-  // {
-  //   path: 'login',
-  //   component: Login,
-  // },
-  // {
-  //   path: 'register',
-  //   component: RegisterComponent,
-  // },
-  // {
-  //   path: '**',
-  //   component: NotfoundpageComponent,
-  // },
-
 ];
