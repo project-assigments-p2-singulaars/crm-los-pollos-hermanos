@@ -23,7 +23,7 @@
             @for (order of orders; track $index){
             <tbody>
                 <tr>
-                    <td>{{ order.productId }}</td>
+                    <td>{{ getProductName(order.productId) }}</td>
                     <td>{{ order.customerId }}</td>
                     <td>{{ order.calendarDate }}</td>
                     <td>{{ order.quantity }}</td>

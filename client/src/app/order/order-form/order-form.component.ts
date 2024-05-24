@@ -81,7 +81,7 @@ export class OrderFormComponent implements OnInit {
         id: newId,
         productId: parseInt(this.orderForm.controls['productId'].value),
         customerId: parseInt(this.orderForm.controls['customerId'].value),
-        calendarDate: new Date().toISOString(),
+        calendarDate: new Date().toString(),
         quantity,
         totalPrice,
         orderStatus: 'pending',
