@@ -1,0 +1,25 @@
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Products</th>
+                <th></th>
+                <th>Stock Amount</th>
+                <th>Product Status</th>
+                <th>Stock Capacity</th>
+            </tr>
+        </thead>
+        @for (product of (products | async ) || []; track product.id){
+            <!-- <app-stock-details [product]="product"></app-stock-details> -->
+            <tbody>
+                <tr>
+                    <td>{{ product.name }}</td>
+                    <td><img [src]="product.imageUrl"></td>
+                    <td>{{ product.stock }}</td>
+                    <td>{{ product.stockShippingStatus }}</td>
+                    <td>{{ calculateStockCapacity(product.stock, product.maxStock) }}</td>
+                </tr>
+            </tbody>
+        }
+    </table>
+</div>
