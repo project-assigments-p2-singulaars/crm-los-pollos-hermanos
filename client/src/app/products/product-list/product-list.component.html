@@ -5,7 +5,7 @@
       <img class="img-container" src="{{ product.imageUrl }}" alt="{{ product.name }}" />
       <h2>{{ product.name }}</h2>
       <p>{{ product.description }}</p>
-      <button [routerLink]="['/products', product.id]" mat-flat-button color="primary">
+      <button [routerLink]="['/layout/products', product.id]" mat-flat-button color="primary">
         <img src="../../../assets/icons/edit icon.svg" /> VIEW
       </button>
     </div>
