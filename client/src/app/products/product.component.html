@@ -1,11 +1,10 @@
 <section class="product-container">
-    <app-search></app-search>
-    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
-      <mat-button-toggle value="open">Add New Product</mat-button-toggle>
-      <mat-button-toggle value="close">close</mat-button-toggle>
-    </mat-button-toggle-group>
-  </section>
-  @if (toggleGroup.value !== "open") {
-  <app-product-list [products]="products()"></app-product-list>
-  }@else {<app-product-form (sentFormulario)="submit()"></app-product-form>}
-   
+  <app-search></app-search>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+    <mat-button-toggle value="open">Add New Product</mat-button-toggle>
+    <mat-button-toggle value="close">close</mat-button-toggle>
+  </mat-button-toggle-group>
+</section>
+@if (toggleGroup.value !== "open") {
+<app-product-list [products]="products()" class="product-grid"></app-product-list>
+}@else {<app-product-form (sentFormulario)="submit()"></app-product-form>}
