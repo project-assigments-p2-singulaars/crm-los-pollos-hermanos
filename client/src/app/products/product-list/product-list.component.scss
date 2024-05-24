@@ -1,17 +1,25 @@
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .product-list-container {
-    width: 100%;
-    display: flex;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-bottom: 2rem;
   }
   
   .card-container {
-    width: 20%;
-    height: 400px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
+    height: 400px;
     flex-direction: column;
     background-color: #ebebeb;
     border-radius: 16px;

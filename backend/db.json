@@ -38,7 +38,7 @@
       "name": "Galactic Taco Cat",
       "categories": ["shirt", "cat"],
       "price": 20.99,
-      "imageUrl": "../assets/images/catMagicShirt.png",
+      "imageUrl": "https://img.kwcdn.com/thumbnail/s/fe99502b0d42a10fed71b45c8d723308_8e6ca617da3a.jpg?imageView2/2/w/650/q/50",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
       "stock": 2,
       "maxStock": 100,
@@ -47,10 +47,7 @@
     {
       "id": 5,
       "name": "Magic Cat",
-      "categories": [
-        "shirt",
-        "cat"
-      ],
+      "categories": ["shirt", "cat"],
       "price": 25.99,
       "imageUrl": "https://catmagicpunks.com/cdn/shop/files/magic_shirt_mock_1024x1024.png?v=1705694211",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
@@ -61,10 +58,7 @@
     {
       "id": 6,
       "name": "Mewing Cat",
-      "categories": [
-        "shirt",
-        "cat"
-      ],
+      "categories": ["shirt", "cat"],
       "price": 25.99,
       "imageUrl": "https://ae01.alicdn.com/kf/S29b092e59b0b4b2f8192f96a17c51642D/Mewing-Not-Meowing-Funny-Meme-for-Men-Women-T-Shirts-Mogging-Cat-Merch-Creative-Tees-Short.jpg",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
@@ -75,10 +69,7 @@
     {
       "id": 7,
       "name": "My Cat Needs me!",
-      "categories": [
-        "shirt",
-        "cat"
-      ],
+      "categories": ["shirt", "cat"],
       "price": 25.99,
       "imageUrl": "https://images.teemill.com/iadjmepnll2wmk8pdkyuvt3rxhlqkbimrgwzvpncq4c96swm.png.png?w=1080&h=auto",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
@@ -89,10 +80,7 @@
     {
       "id": 8,
       "name": "Don't pet the Cat",
-      "categories": [
-        "shirt",
-        "cat"
-      ],
+      "categories": ["shirt", "cat"],
       "price": 25.99,
       "imageUrl": "https://www.legboot.com/wp-content/uploads/2021/01/redirect01132021160138-4.png",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
@@ -103,10 +91,7 @@
     {
       "id": 9,
       "name": "Michiverse",
-      "categories": [
-        "shirt",
-        "cat"
-      ],
+      "categories": ["shirt", "cat"],
       "price": 25.99,
       "imageUrl": "https://printacoph.com/cdn/shop/files/Cat-Meme-Black.png?v=1691634222&width=416",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
@@ -117,10 +102,7 @@
     {
       "id": 10,
       "name": "Dissociating Cat",
-      "categories": [
-        "shirt",
-        "cat"
-      ],
+      "categories": ["shirt", "cat"],
       "price": 25.99,
       "imageUrl": "https://curiouscatcompany.com/cdn/shop/files/mockup-of-a-man-wearing-a-customizable-t-shirt-against-a-plain-color-backdrop-1422-el1_1_bea1ffac-1d95-4188-9447-120d2b40960d_1024x1024.png?v=1698383385",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
@@ -131,10 +113,7 @@
     {
       "id": 11,
       "name": "Salad Cat",
-      "categories": [
-        "shirt",
-        "cat"
-      ],
+      "categories": ["shirt", "cat"],
       "price": 25.99,
       "imageUrl": "https://www.yocrackers.com/cdn/shop/products/REALHOUSEWIVESMEMET-SHIRT.png?v=1623518084",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
@@ -145,10 +124,7 @@
     {
       "id": 12,
       "name": "Mugger Cat",
-      "categories": [
-        "shirt",
-        "cat"
-      ],
+      "categories": ["shirt", "cat"],
       "price": 25.99,
       "imageUrl": "https://images.teemill.com/slbpe0irv9pg8gavcrhpvviqbszyua7leceuxbdz6bwv3n9o.png.png?w=1080&h=auto",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
@@ -167,7 +143,7 @@
       "email": "mribeiro@gmail.com",
       "joinDate": "20 May 2024 12:20:12 GMT",
       "profilePhoto": "https://i.pinimg.com/originals/d0/ec/c6/d0ecc611ae21d45d6ed3e664d6661f4b.png"
-    }, 
+    },
     {
       "id": 2,
       "customerName": "Michely",
@@ -177,7 +153,7 @@
       "email": "mparedes@gmail.com",
       "joinDate": "20 May 2024 11:19:12 GMT",
       "profilePhoto": "https://catswiththeirtonguesout.com/cdn/shop/products/kiss-cut-stickers-white-5.5x5.5-default-63dc2fbceaab6.png?v=1675375061&width=533"
-    }, 
+    },
     {
       "id": 3,
       "customerName": "Laura",
@@ -187,7 +163,7 @@
       "email": "lbenavides@gmail.com",
       "joinDate": "20 May 2024 16:20:12 GMT",
       "profilePhoto": "https://www.scratch.school/wp-content/uploads/2017/12/nyan-cat-scaled.png"
-    }, 
+    },
     {
       "id": 4,
       "customerName": "Xavi",
@@ -197,7 +173,7 @@
       "email": "xmartin@gmail.com",
       "joinDate": "21 May 2024 14:15:12 GMT",
       "profilePhoto": "https://cdn3.emoji.gg/emojis/9028-uwu.png"
-    }, 
+    },
     {
       "id": 5,
       "customerName": "Alex",
