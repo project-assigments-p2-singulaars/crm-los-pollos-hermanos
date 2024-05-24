@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SearchComponent } from "../../shared/components/search/search.component";
 import { ProductComponent } from '../../products/product.component';
 import { RouterOutlet } from '@angular/router';
 import { AsideComponent } from '../aside/aside.component';
