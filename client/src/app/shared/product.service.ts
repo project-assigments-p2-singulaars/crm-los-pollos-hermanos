@@ -10,9 +10,9 @@ export class ProductService {
   /*   public products = signal<Product[]>([]); */
   http = inject(HttpClient);
 
-  // getAllProduct() {
-  //   return this.http.get<Product[]>('http://localhost:3000/products');
-  // }
+  getAllProduct() {
+    return this.http.get<Product[]>('http://localhost:3000/products');
+  }
 
   async addProduct(product: Product){
     console.log(product);
