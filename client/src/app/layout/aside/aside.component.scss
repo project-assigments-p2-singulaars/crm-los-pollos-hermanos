@@ -2,7 +2,8 @@
 
 .aside-container {
     height: 100vh;
-    background: linear-gradient(to bottom , #C548AB, #635BFF)
+    position: fixed;
+    background: linear-gradient(to bottom , #C548AB, #635BFF);
 }
 
 .logo-container{
@@ -52,6 +53,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 0.5rem;
     figcaption {
         display: flex;
@@ -59,5 +61,8 @@ nav{
         font-family: Poppins, sans-serif;
         color: #ffff;
         font-size: 0.7rem;
+    }
+    img{
+        width: 80%;
     }
 }

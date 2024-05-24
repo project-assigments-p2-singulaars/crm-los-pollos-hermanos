@@ -6,6 +6,7 @@
 
 :host {
     display: grid;
+    width: 100vw;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 6fr;
     height: 100vh;
@@ -14,6 +15,7 @@
         "aside header"
         "aside content"
         "aside content";
+
 }
 
 app-header {
