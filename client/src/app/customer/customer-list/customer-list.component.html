@@ -3,7 +3,7 @@
  
 <table>
     <tr> <!--rows titulos-->
-            
+            <th>Profile Photo</th>
             <th>Name</th>
             <th>Surname</th>
             <th>Age</th>
@@ -11,18 +11,16 @@
             <th>Email</th>
             <th>Join Date</th>
     </tr>
-
-    <tr><!--rows contenido-->
-      @for (customer of customers; track $index) {
-        <td><img src="{{customer.profilePhoto}}" alt="{{customer.customerName}}"></td>
+    @for (customer of customers; track $index) {
+    <tr><!--rows contenido-->   
+        <td class="customer-profile-pic-row"><img src="{{customer.profilePhoto}}" alt="{{customer.customerName}}" class="customer-profile-photo"></td>
         <td>{{customer.customerName}}</td>
         <td>{{customer.customerSurname}}</td>
         <td>{{customer.age}}</td>
         <td>{{customer.gender}}</td>
         <td>{{customer.email}}</td>
         <td>{{customer.joinDate}}</td>
-      }
-      
-    </tr>
 
+    </tr>
+  }
   </table>
