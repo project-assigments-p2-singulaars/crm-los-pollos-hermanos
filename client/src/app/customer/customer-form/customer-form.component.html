@@ -1,1 +1,36 @@
-<p>customer-form works!</p>
+<form class="form-container" [formGroup]="customerForm" (ngSubmit)="submit()">
+    <h3>New Customer</h3>
+    <mat-form-field class="name-input">
+      <mat-label>name</mat-label>
+      <input matInput type="text" formControlName="customerName"  />
+    </mat-form-field>
+    <mat-form-field class="name-input">
+        <mat-label>surname</mat-label>
+        <input matInput type="text" formControlName="customerSurname"  />
+      </mat-form-field>
+
+    <div class="row-inputs-container">
+      <mat-form-field class="category-input">
+        <mat-label>age</mat-label> 
+        <input matInput formControlName="age" />
+      </mat-form-field>
+
+      <mat-form-field class="row-input">
+        <mat-label>gender</mat-label>
+        <input matInput formControlName="gender" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>email</mat-label>
+        <input matInput formControlName="email" />
+      </mat-form-field>
+    </div>
+  
+
+    <mat-form-field class="url-input">
+      <mat-label>profile photo</mat-label>
+      <input matInput formControlName="profilePhoto" />
+    </mat-form-field>
+    <button mat-button class="add-btn" type="submit">Add New Customer</button>
+  </form>
+  
