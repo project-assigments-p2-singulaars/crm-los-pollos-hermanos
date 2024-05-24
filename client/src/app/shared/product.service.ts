@@ -19,17 +19,17 @@ products!:Product[];
   async addProduct(product: Product){
     console.log(product);
     const result = await firstValueFrom(
-      this.http.post<Product>('http://localhost:3000/products', product)
+      this.http.post<Product>(this.url.concat("/products"), product)
     )
         console.log(result);
   }
 
 getProductById(id: number):any{
   console.log(id)
-  return this.http.get<Product>(`http://localhost:3000/products/${id}`); // string interpolation  ${ }
+  return this.http.get<Product>(this.url.concat(`/products/${id}`)); // string interpolation  ${ }
 }
 deleteProd(id: number){
-  return this.http.delete<Product>(`http://localhost:3000/products/${id}`);
+  return this.http.delete<Product>(this.url.concat(`/products/${id}`));
 
 }
 
