@@ -79,8 +79,10 @@ export class LandingPageComponent {
         email: this.registerForm.controls['emailRegister'].value,
         password: this.registerForm.controls['passwordRegister'].value,
       };
-      this.loginService.register(user);
-      this.router.navigate(['layout'])
+      this.loginService.register(user).then(result => {
+        localStorage.setItem('token', result.accessToken)
+        this.router.navigate(['layout'])
+      });
     }
   }
 };
