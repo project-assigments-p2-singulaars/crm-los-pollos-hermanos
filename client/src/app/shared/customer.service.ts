@@ -4,7 +4,7 @@ import { Observable, catchError, firstValueFrom, of } from 'rxjs';
 import { Customer } from './interfaces/customer';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CustomerService {
   products!: Customer[];
@@ -29,23 +29,3 @@ export class CustomerService {
 // }
   constructor() {}
 }
-
-// async login(credentials:User){
-//     try{
-//       const result = await firstValueFrom(this.http.post<LoginResponseType>(this.url.concat('/login'), credentials))
-
-//       const {user} = result;
-//       this.localStorageService.setItem('user',JSON.stringify(user))
-
-//     }catch(e){
-//       throw e;
-//     }
-//   }
-// }
-
-// addHero(hero: Hero): Observable<Hero> {
-//   return this.http.post<Hero>(this.heroesUrl, hero, httpOptions)
-//     .pipe(
-//       catchError(this.handleError('addHero', hero))
-//     );
-// }

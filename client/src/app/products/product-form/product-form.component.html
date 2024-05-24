@@ -1,35 +1,36 @@
-<form class="form-container" [formGroup]="productForm" (ngSubmit)="submit()">
-  <h3>New Product</h3>
-  <mat-form-field class="name-input">
-    <mat-label>name</mat-label>
-    <input matInput type="text" formControlName="name"  />
-  </mat-form-field>
+<section class="form-container">
+  <form class="modal-container" [formGroup]="productForm" (ngSubmit)="submit()">
+    <h3>New Product</h3>
+    <mat-form-field class="name-input">
+      <mat-label>name</mat-label>
+      <input matInput type="text" formControlName="name" />
+    </mat-form-field>
+    <div class="row-inputs-container">
+      <mat-form-field class="category-input">
+        <mat-label>category</mat-label>
+        <mat-select formControlName="categories">
+          <mat-option value="Cats">Cats</mat-option>
+          <mat-option value="T-Shirts">T-Shirts</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="row-input">
+        <mat-label>price...</mat-label>
+        <input matInput formControlName="price" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>stock</mat-label>
+        <input matInput formControlName="stock" />
+      </mat-form-field>
+    </div>
 
-  <div class="row-inputs-container">
-    <mat-form-field class="category-input">
-      <mat-label>category</mat-label>
-      <mat-select formControlName="categories">
-        <mat-option value="Cats">Cats</mat-option>
-        <mat-option value="T-Shirts">T-Shirts</mat-option>
-      </mat-select>
+    <mat-form-field class="description-input">
+      <mat-label>description</mat-label>
+      <textarea matInput formControlName="description"></textarea>
     </mat-form-field>
-    <mat-form-field class="row-input">
-      <mat-label>price...</mat-label>
-      <input matInput formControlName="price" />
+    <mat-form-field class="url-input">
+      <mat-label>Upload image URL</mat-label>
+      <input matInput formControlName="imageUrl" />
     </mat-form-field>
-    <mat-form-field>
-      <mat-label>stock</mat-label>
-      <input matInput formControlName="stock" />
-    </mat-form-field>
-  </div>
-
-  <mat-form-field class="description-input">
-    <mat-label>description</mat-label>
-    <textarea matInput formControlName="description"></textarea>
-  </mat-form-field>
-  <mat-form-field class="url-input">
-    <mat-label>Upload image URL</mat-label>
-    <input matInput formControlName="imageUrl" />
-  </mat-form-field>
-  <button mat-button class="add-btn" type="submit">Add New Product</button>
-</form>
+    <button mat-button class="add-btn" type="submit">Done</button>
+  </form>
+</section>

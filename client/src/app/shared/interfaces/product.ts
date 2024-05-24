@@ -1,9 +1,11 @@
 export interface Product {
-  id?: number;
-  name: string;
-  price?: GLfloat;
-  imageUrl?: string;
-  categories?: string[];
-  description?: string;
-  stock?: number;
+    id?: number;
+    name: string;
+    price?: GLfloat;
+    imageUrl?: string;
+    categories?:string[]
+    description?: string;
+    stock: number;
+    maxStock: number,
+    stockShippingStatus?: string
 }

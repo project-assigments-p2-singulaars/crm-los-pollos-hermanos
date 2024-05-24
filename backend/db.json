@@ -1,57 +1,270 @@
 {
-
   "products": [
     {
       "id": 1,
       "name": "Fu*k! Monday cat",
-      "categories": [
-        "shirt",
-        "cat"
-      ],
+      "categories": ["shirt", "cat"],
       "price": 12.99,
       "imageUrl": "https://img.fruugo.com/product/9/06/1440307069_0340_0340.jpg",
       "description": "You hate when Monday comes? Share that feeling with the rest of the world with this awesome T-shirt!",
-      "stock": 100
+      "stock": 100,
+      "maxStock": 200,
+      "stockShippingStatus": "ok"
     },
     {
       "id": 2,
       "name": "Wtf face kitten",
-      "categories": [
-        "shirt",
-        "cat"
-      ],
+      "categories": ["shirt", "cat"],
       "price": 15.99,
       "imageUrl": "https://i.etsystatic.com/44955627/r/il/530067/5884361355/il_794xN.5884361355_9a67.jpg",
       "description": "You don't understand Angular but act like you do? Now you don't have to pretend with this awesome T-shirt!",
-      "stock": 50
+      "stock": 50,
+      "maxStock": 150,
+      "stockShippingStatus": "pending"
     },
     {
       "id": 3,
       "name": "Sad kitten",
-      "categories": [
-        "shirt",
-        "cat"
-      ],
+      "categories": ["shirt", "cat"],
       "price": 10.99,
       "imageUrl": "https://img.mrvcdn.com/g/fb/kf/S978f61b49ac949d2857d8b41b2a684acO.jpg_2200x2200q75.avif",
       "description": "You cry yourself to sleep? Don't worry, with this T-shirt you will have a friend to keep you company! :D",
-      "stock": 10
+      "stock": 10,
+      "maxStock": 200,
+      "stockShippingStatus": "ordered"
     },
     {
       "id": 4,
       "name": "Galactic Taco Cat",
+      "categories": ["shirt", "cat"],
+      "price": 20.99,
+      "imageUrl": "../assets/images/catMagicShirt.png",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 2,
+      "maxStock": 100,
+      "stockShippingStatus": "ordered"
+    },
+    {
+      "id": 5,
+      "name": "Magic Cat",
       "categories": [
         "shirt",
         "cat"
       ],
-      "price": 20.99,
-      "imageUrl": "https://img.kwcdn.com/thumbnail/s/fe99502b0d42a10fed71b45c8d723308_8e6ca617da3a.jpg?imageView2/2/w/650/q/50",
+      "price": 25.99,
+      "imageUrl": "https://catmagicpunks.com/cdn/shop/files/magic_shirt_mock_1024x1024.png?v=1705694211",
       "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
-      "stock": 2
+      "stock": 29,
+      "maxStock": 120,
+      "stockShippingStatus": "pending"
+    },
+    {
+      "id": 6,
+      "name": "Mewing Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://ae01.alicdn.com/kf/S29b092e59b0b4b2f8192f96a17c51642D/Mewing-Not-Meowing-Funny-Meme-for-Men-Women-T-Shirts-Mogging-Cat-Merch-Creative-Tees-Short.jpg",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 30,
+      "maxStock": 40,
+      "stockShippingStatus": "ok"
+    },
+    {
+      "id": 7,
+      "name": "My Cat Needs me!",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://images.teemill.com/iadjmepnll2wmk8pdkyuvt3rxhlqkbimrgwzvpncq4c96swm.png.png?w=1080&h=auto",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 150,
+      "maxStock": 200,
+      "stockShippingStatus": "ok"
+    },
+    {
+      "id": 8,
+      "name": "Don't pet the Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://www.legboot.com/wp-content/uploads/2021/01/redirect01132021160138-4.png",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 1,
+      "maxStock": 180,
+      "stockShippingStatus": "ordered"
+    },
+    {
+      "id": 9,
+      "name": "Michiverse",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://printacoph.com/cdn/shop/files/Cat-Meme-Black.png?v=1691634222&width=416",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 50,
+      "maxStock": 125,
+      "stockShippingStatus": "pending"
+    },
+    {
+      "id": 10,
+      "name": "Dissociating Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://curiouscatcompany.com/cdn/shop/files/mockup-of-a-man-wearing-a-customizable-t-shirt-against-a-plain-color-backdrop-1422-el1_1_bea1ffac-1d95-4188-9447-120d2b40960d_1024x1024.png?v=1698383385",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 14,
+      "maxStock": 120,
+      "stockShippingStatus": "ordered"
+    },
+    {
+      "id": 11,
+      "name": "Salad Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://www.yocrackers.com/cdn/shop/products/REALHOUSEWIVESMEMET-SHIRT.png?v=1623518084",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 65,
+      "maxStock": 100,
+      "stockShippingStatus": "ok"
+    },
+    {
+      "id": 12,
+      "name": "Mugger Cat",
+      "categories": [
+        "shirt",
+        "cat"
+      ],
+      "price": 25.99,
+      "imageUrl": "https://images.teemill.com/slbpe0irv9pg8gavcrhpvviqbszyua7leceuxbdz6bwv3n9o.png.png?w=1080&h=auto",
+      "description": "Are you a weirdo and want to show it? Embrace chaos with this T-shirt!",
+      "stock": 19,
+      "maxStock": 60,
+      "stockShippingStatus": "pending"
     }
   ],
-  "customers": [],
-  "orders": [],
+  "customers": [
+    {
+      "id": 1,
+      "customerName": "Matheus",
+      "customerSurname": "Ribeiro",
+      "age": 26,
+      "gender": "male",
+      "email": "mribeiro@gmail.com",
+      "joinDate": "20 May 2024 12:20:12 GMT",
+      "profilePhoto": "https://i.pinimg.com/originals/d0/ec/c6/d0ecc611ae21d45d6ed3e664d6661f4b.png"
+    }, 
+    {
+      "id": 2,
+      "customerName": "Michely",
+      "customerSurname": "Paredes",
+      "age": 29,
+      "gender": "female",
+      "email": "mparedes@gmail.com",
+      "joinDate": "20 May 2024 11:19:12 GMT",
+      "profilePhoto": "https://catswiththeirtonguesout.com/cdn/shop/products/kiss-cut-stickers-white-5.5x5.5-default-63dc2fbceaab6.png?v=1675375061&width=533"
+    }, 
+    {
+      "id": 3,
+      "customerName": "Laura",
+      "customerSurname": "Benavides",
+      "age": 25,
+      "gender": "female",
+      "email": "lbenavides@gmail.com",
+      "joinDate": "20 May 2024 16:20:12 GMT",
+      "profilePhoto": "https://www.scratch.school/wp-content/uploads/2017/12/nyan-cat-scaled.png"
+    }, 
+    {
+      "id": 4,
+      "customerName": "Xavi",
+      "customerSurname": "Martin",
+      "age": 31,
+      "gender": "male",
+      "email": "xmartin@gmail.com",
+      "joinDate": "21 May 2024 14:15:12 GMT",
+      "profilePhoto": "https://cdn3.emoji.gg/emojis/9028-uwu.png"
+    }, 
+    {
+      "id": 5,
+      "customerName": "Alex",
+      "customerSurname": "Morell",
+      "age": 24,
+      "gender": "male",
+      "email": "amorell@gmail.com",
+      "joinDate": "20 May 2024 14:15:12 GMT",
+      "profilePhoto": "https://static.vecteezy.com/system/resources/previews/041/713/469/non_2x/ai-generated-inquisitive-raccoon-with-a-curious-gaze-on-transparent-background-stock-png.png"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "productId": 3,
+      "quantity": 3,
+      "customerId": 1,
+      "calendarDate": "21 May 2024 12:12:12 GMT",
+      "totalPrice": 32.97,
+      "orderStatus": "delivered"
+    },
+    {
+      "id": 2,
+      "productId": 1,
+      "quantity": 1,
+      "customerId": 3,
+      "calendarDate": "21 May 2024 16:01:34 GMT",
+      "totalPrice": 12.99,
+      "orderStatus": "delivered"
+    },
+    {
+      "id": 3,
+      "productId": 2,
+      "quantity": 10,
+      "customerId": 4,
+      "calendarDate": "22 May 2024 10:34:28 GMT",
+      "totalPrice": 159.9,
+      "orderStatus": "pending"
+    },
+    {
+      "id": 4,
+      "productId": 3,
+      "quantity": 2,
+      "customerId": 2,
+      "calendarDate": "22 May 2024 16:21:11 GMT",
+      "totalPrice": 51.98,
+      "orderStatus": "pending"
+    },
+    {
+      "id": 5,
+      "productId": 1,
+      "quantity": 5,
+      "customerId": 1,
+      "calendarDate": "22 May 2024 21:51:08 GMT",
+      "totalPrice": 125.94,
+      "orderStatus": "pending"
+    },
+    {
+      "id": 6,
+      "productId": 2,
+      "quantity": 1,
+      "customerId": 3,
+      "calendarDate": "22 May 2024 21:55:40 GMT",
+      "totalPrice": 25.99,
+      "orderStatus": "pending"
+    }
+  ],
   "users": [
     {
       "email": "test@gmail.com",

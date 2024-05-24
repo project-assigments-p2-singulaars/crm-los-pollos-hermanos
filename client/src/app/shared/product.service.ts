@@ -1,11 +1,11 @@
 import { Injectable, inject, signal } from '@angular/core';
 import { Product } from './interfaces/product';
 import { HttpClient } from '@angular/common/http';
-import { Observable, catchError, firstValueFrom, of } from 'rxjs';
+import { firstValueFrom } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class ProductService {
+export class ProductService { 
   products!: Product[];
   /*   public products = signal<Product[]>([]); */
   http = inject(HttpClient);
@@ -25,6 +25,14 @@ export class ProductService {
 getProductById(id: number):any{
   console.log(id)
   return this.http.get<Product>(`http://localhost:3000/products/${id}`); // string interpolation  ${ }
+}
+deleteProd(id: number){
+  return this.http.delete<Product>(`http://localhost:3000/products/${id}`);
+
+}
+
+getStockPercentage(currentStock: number, maxStock:number){
+  return ((currentStock * 100) / maxStock).toFixed(2);
 }
   constructor() {}
 }
