@@ -1,16 +1,31 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable, catchError, firstValueFrom, of } from 'rxjs';
 import { Customer } from './interfaces/customer';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CustomerService {
+  products!: Customer[];
+  /*   public products = signal<Product[]>([]); */
   http = inject(HttpClient);
 
-  getAllCustomer() {
+  getAllCustomers() {
     return this.http.get<Customer[]>('http://localhost:3000/customers');
   }
 
+  async addCustomer(customer: Customer){
+    console.log(customer);
+    const result = await firstValueFrom(
+      this.http.post<Customer>('http://localhost:3000/customers', customer)
+    )
+        console.log(result);
+  }
+
+// getProductById(id: number):any{
+//   console.log(id)
+//   return this.http.get<Customer>(`http://localhost:3000/products/${id}`); // string interpolation  ${ }
+// }
   constructor() {}
 }

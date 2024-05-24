@@ -55,7 +55,7 @@ export class OrderFormComponent implements OnInit {
     });
 
     this.products = this.productService.getAllProduct();
-    this.customers = this.customerService.getAllCustomer();
+    this.customers = this.customerService.getAllCustomers();
   }
 
   async submit() {

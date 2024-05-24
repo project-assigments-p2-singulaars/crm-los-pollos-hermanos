@@ -80,7 +80,7 @@ export class LandingPageComponent {
         password: this.registerForm.controls['passwordRegister'].value,
       };
       this.loginService.register(user);
+      this.router.navigate(['layout'])
     }
   }
 };
-
