@@ -42,7 +42,7 @@
       <button mat-flat-button color="primary" id="pdButEdit">
         <img src="../../../assets/icons/edit icon.svg" /> EDIT
       </button>
-      <button mat-flat-button color="primary" id="pdButDelete">
+      <button (click)="deleteProduct($event)" mat-flat-button color="primary" id="pdButDelete">
         <img src="../../../assets/icons/trash icon.svg" />DELETE
       </button>
     </div>

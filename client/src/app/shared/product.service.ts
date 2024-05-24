@@ -26,7 +26,10 @@ getProductById(id: number):any{
   console.log(id)
   return this.http.get<Product>(`http://localhost:3000/products/${id}`); // string interpolation  ${ }
 }
-  constructor() {}
+deleteProd(id: number){
+  return this.http.delete<Product>(`http://localhost:3000/products/${id}`);
+
+}
 }
 
 // async login(credentials:User){

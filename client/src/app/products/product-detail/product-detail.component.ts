@@ -3,7 +3,7 @@ import { Product } from '../../shared/interfaces/product';
 import { ProductService } from '../../shared/product.service';
 import { Observable } from 'rxjs';
 import { MatButtonModule } from '@angular/material/button';
-
+import {  Router } from '@angular/router';
 @Component({
   selector: 'app-product-detail',
   standalone: true,
@@ -16,6 +16,10 @@ export class ProductDetailComponent implements OnInit{
 productInfo!: Observable<Product>; // convertir el dato en observable 
 product!: Product;
 private productService = inject(ProductService)
+private router = inject(Router);
+
+
+
 ngOnInit(): void {
   console.log(this.id)
   let id = parseInt(this.id) // convertir en numbero el ID recibido
@@ -25,4 +29,17 @@ ngOnInit(): void {
 this.product=response
   })
 }
-}
+
+deleteProduct(event: any){
+  if (confirm('Are you sure you want to delete the product?'))
+
+{event.target.innerText = "Deliting..."};
+
+let id = parseInt(this.id);
+
+this.productService.deleteProd(id).subscribe((response: any)=>{
+  this.router.navigate(['/products'])
+})
+}}
+     
+
