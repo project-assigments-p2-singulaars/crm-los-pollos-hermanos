@@ -1,1 +1,32 @@
-<p>order-form works!</p>
+<section class="order-form-container">
+    <form class="modal-container" [formGroup]="orderForm" (ngSubmit)="submit()">
+        <h3>New Order</h3>
+        <mat-form-field class="white-input">
+            <mat-label>Product</mat-label>
+            <mat-select formControlName="productId">
+                @for (product of (products | async) || []; track product.id){
+                <mat-option [value]="product.id">
+                    {{ product.name }}
+                </mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="white-input">
+            <mat-label>Customer</mat-label>
+            <mat-select formControlName="customerId">
+                @for (customer of (customers | async) || []; track customer.id){
+                <mat-option [value]="customer.id" class="order-input">
+                    {{ customer.customerName }}
+                </mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="quantity">
+            <mat-label>Quantity</mat-label>
+            <input matInput type="number" formControlName="quantity" />
+        </mat-form-field>
+        <div class="button-group">
+            <button mat-button class="add-btn" type="submit">Add New Order</button>
+        </div>
+    </form>
+</section>
