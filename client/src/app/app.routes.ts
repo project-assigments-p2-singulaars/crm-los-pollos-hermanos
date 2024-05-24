@@ -7,14 +7,16 @@ import { ProductListComponent } from './products/product-list/product-list.compo
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CustomerComponent } from './customer/customer.component';
 import { OrderComponent } from './order/order.component';
+import { authGuard } from './auth.guard';
 
 export const routes: Routes = [
   {
     path: '',
-    component: LandingPageComponent
+    component: LandingPageComponent,
   },
   {
     path: 'layout',
+    canActivate: [authGuard],
     component: LayoutComponent,
     children: [
       {
@@ -38,7 +40,7 @@ export const routes: Routes = [
         component: ProductComponent,
       },
       {
-        path:"products/:id",
+        path: 'products/:id',
         component: ProductDetailComponent,
       },
     ],
